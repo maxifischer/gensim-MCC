@@ -34,6 +34,7 @@ count_data=df['PY'].value_counts()
 sns.barplot(count_data.index, count_data.values)
 plt.xlabel('Publishing Year')
 plt.ylabel('Number of Abstracts')
+plt.MaxNLocator(10)
 plt.savefig('./figures/year_abstracts.pdf')
 ##########
 
