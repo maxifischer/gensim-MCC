@@ -31,10 +31,14 @@ print(df.shape)
 print("Plotting year against abstracts")
 print(df['PY'].value_counts())
 count_data=df['PY'].value_counts()
-sns.barplot(count_data.index, count_data.values)
+ax = sns.barplot(count_data.index, count_data.values)
 plt.xlabel('Publishing Year')
 plt.ylabel('Number of Abstracts')
-plt.MaxNLocator(10)
+for ind, label in enumerate(ax.get_xticklabels()):
+    if ind % 3 == 0:  # every 10th label is kept
+        label.set_visible(True)
+    else:
+        label.set_visible(False)
 plt.savefig('./figures/year_abstracts.pdf')
 ##########
 
