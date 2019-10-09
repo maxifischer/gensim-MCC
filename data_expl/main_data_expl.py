@@ -7,6 +7,7 @@ import string
 from nltk.tokenize import word_tokenize
 import pickle
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 pd.set_option('display.max_columns', 500)
@@ -27,9 +28,10 @@ print(df.shape)
 ########## Plotting year ~ abstracts
 print("Plotting year against abstracts")
 print(df['PY'].value_counts())
-ax = df['PY'].value_counts().plot(kind='bar')
-fig = ax.get_figure()
-fig.savefig('./figures/year_abstracts.pdf')
+sns.distplot(df['PY'].value_counts(), kde=False)
+plt.xlabel('Publishing Year')
+plt.ylabel('Number of Abstracts')
+plt.savefig('./figures/year_abstracts.pdf')
 ##########
 
 #text = df['content'].values.astype('U').tolist()
