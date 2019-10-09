@@ -8,6 +8,7 @@ from nltk.tokenize import word_tokenize
 import pickle
 import seaborn as sns
 import matplotlib.pyplot as plt
+from collections import Counter, OrderedDict
 
 
 pd.set_option('display.max_columns', 500)
@@ -28,62 +29,81 @@ df['PY'] = df['PY'].astype(int)
 print(df.shape)
 
 ########## Plotting year ~ abstracts
-print("Plotting year against abstracts")
-print(df['PY'].value_counts())
-count_data=df['PY'].value_counts()
-ax = sns.barplot(count_data.index, count_data.values)
-plt.xlabel('Publishing Year')
-plt.ylabel('Number of Abstracts')
-for ind, label in enumerate(ax.get_xticklabels()):
-    if ind % 3 == 0:  # every 10th label is kept
-        label.set_visible(True)
-    else:
-        label.set_visible(False)
-plt.savefig('./figures/year_abstracts.pdf')
+#print("Plotting year against abstracts")
+#print(df['PY'].value_counts())
+#count_data=df['PY'].value_counts()
+#ax = sns.barplot(count_data.index, count_data.values)
+#plt.xlabel('Publishing Year')
+#plt.ylabel('Number of Abstracts')
+#for ind, label in enumerate(ax.get_xticklabels()):
+#    if ind % 3 == 0:  # every 10th label is kept
+#        label.set_visible(True)
+#    else:
+#        label.set_visible(False)
+#plt.savefig('./figures/year_abstracts.pdf')
 ##########
 
 #text = df['content'].values.astype('U').tolist()
 
-#df['community'] = df['wosarticle__wc'].apply(len)#.str.strip('\]\[').str.replace('[\'"]', '').str.split(',|;')
+############### community preprocessing
 df['community'] = df['wosarticle__wc'].str.lower()
-df['community'] = df['community'].str.replace(r'green & sustainable science & technology,?;? ?', '')
-df['community'] = df['community'].str.replace(r'sciences', '')
-#df['community'] = df['community'].str.replace(r'environmental studies,?;? ?', '')
-df['community'] = df['community'].str.replace(r'multidisciplinary,?;? ?', '')
-df['community'] = df['community'].str.replace(r'engineering, environmental', 'environmental engineering')
-df['community'] = df['community'].str.replace(r'\[|\]|\'|\"', '')
+df['community'] = df['community'].str.replace(r'\[|\]|\'|\"|&', '')
 df['community'] = df['community'].str.strip()
 df['community'] = df['community'].str.replace(r'[,|;]+', '')
-df['community'] = df['community'].where(~df['community'].str.contains('environment'), 'environmental')
-df['community'] = df['community'].where(~df['community'].str.contains('energ'), 'energy')
-df['community'] = df['community'].where(~df['community'].str.contains('chemi'), 'chemical')
-df['community'] = df['community'].where(~df['community'].str.contains('forest'), 'forestry')
-df['community'] = df['community'].where(~df['community'].str.contains('agri'), 'agricultural')
-df['community'] = df['community'].where(~df['community'].str.contains('ecol'), 'ecological')
-df['community'] = df['community'].where(~df['community'].str.contains('agro'), 'agronomical')
-df['community'] = df['community'].where(~df['community'].str.contains('econ'), 'economical')
-df['community'] = df['community'].where(~df['community'].str.contains('water'), 'water')
-df['community'] = df['community'].where(~df['community'].str.contains('fish'), 'fisheries')
-df['community'] = df['community'].where(~df['community'].str.contains('biol'), 'biological')
-df['community'] = df['community'].where(~df['community'].str.contains('engin'), 'engineering')
-df['community'] = df['community'].where(~df['community'].str.contains('medic|health'), 'medicine & health care')
-print(df.groupby(['community']).count().sort_values(['content'], ascending=False))
-df.groupby(['community']).count().sort_values(['content'], ascending=False).to_csv("communities.csv")
+
+#################### filters for 8 communities
+#df['community'] = df['community'].where(~df['community'].str.contains('environmental|ecology'), 'environmental')
+#df['community'] = df['community'].where(~df['community'].str.contains('energy|fuels'), 'energy')
+#df['community'] = df['community'].where(~df['community'].str.contains('chemistry|chemical'), 'chemical')
+#df['community'] = df['community'].where(~df['community'].str.contains('water'), 'water')
+#df['community'] = df['community'].where(~df['community'].str.contains('management|economics'), 'economics')
+#df['community'] = df['community'].where(~df['community'].str.contains('agriculture|agronomy'), 'agriculture agronomy')
+#df['community'] = df['community'].where(~df['community'].str.contains('materials'), 'materials')
+#df['community'] = df['community'].where(~df['community'].str.contains('forestry'), 'forestry')
+#df['community'] = df['community'].where(df['community'].str.contains('environmental|energy|chemical|water|economics|agriculture|materials|forestry'), 'forestry')
+
+############### community data exploration
+df['community'] = df['community'].str.split()
+communities = df['community'].tolist()
+communities = [item for sublist in communities for item in sublist]
+print(communities[:10])
+counted = Counter(communities)
+sorted_comm = sorted(counted.items(), key=lambda kv: kv[1], reverse=True)
+print(sorted_comm)
+###############
+############## plotting word frequency
+print("Plotting word frequency of word categories")
+count_data = sorted_comm[:50]
+print(count_data)
+#ax = sns.barplot([el[0] for el in count_data], [el[1] for el in count_data])
+#plt.xlabel('Most Frequently Appearing Categories')
+#plt.ylabel('Number of Occurrences')
+#plt.savefig('./figures/word_category_frequencies_before.pdf')
+#############
+
+
+
+
+
+#print(df['community'].value_counts().sort_values(['content'], ascending=False))
+#df.groupby(['community']).count().sort_values(['content'], ascending=False).to_csv("communities.csv")
 #print(df['community'])
 #processed_text = []
-tqdm.pandas()
-df['content'] = df['content'].str.lower()
-df['content'] = df['content'].str.replace(r'\d+', '')
-regexPart1 = r"\s"
-regexPart2 = r"(?:s|'s|!+|,|\.|-|;|:|\(|\)|\"|\?+)?\s"  
-#df['content'] = df['content'].str.replace(regexPart1 + re.escape(df['content']) + regexPart2, re.IGNORECASE)
-df['content'] = df['content'].str.replace(regexPart1 + regexPart2, '')
-df['content'] = df['content'].str.strip()
-df['wc'] = df.progress_apply(lambda row: len(word_tokenize(row['content'])), axis=1)
-print(df['content'][:10])
-print(df['wc'][:10])
 
-df.to_csv("preprocessed_data.csv")
+########## preprocessing
+#tqdm.pandas()
+#df['content'] = df['content'].str.lower()
+#df['content'] = df['content'].str.replace(r'\d+', '')
+#regexPart1 = r"\s"
+#regexPart2 = r"(?:s|'s|!+|,|\.|-|;|:|\(|\)|\"|\?+)?\s"  
+#df['content'] = df['content'].str.replace(regexPart1 + re.escape(df['content']) + regexPart2, re.IGNORECASE)
+#df['content'] = df['content'].str.replace(regexPart1 + regexPart2, '')
+#df['content'] = df['content'].str.strip()
+#df['wc'] = df.progress_apply(lambda row: len(word_tokenize(row['content'])), axis=1)
+#print(df['content'][:10])
+#print(df['wc'][:10])
+
+#df.to_csv("preprocessed_data.csv")
 #cv = CountVectorizer()
 #tfidf = TfidfVectorizer(lowercase=False)
 #wc_vector = tfidf.fit_transform(df['content'])
