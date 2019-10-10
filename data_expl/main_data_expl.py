@@ -52,15 +52,15 @@ df['community'] = df['community'].str.strip()
 df['community'] = df['community'].str.replace(r'[,|;]+', '')
 
 #################### filters for 8 communities
-#df['community'] = df['community'].where(~df['community'].str.contains('environmental|ecology'), 'environmental')
-#df['community'] = df['community'].where(~df['community'].str.contains('energy|fuels'), 'energy')
-#df['community'] = df['community'].where(~df['community'].str.contains('chemistry|chemical'), 'chemical')
-#df['community'] = df['community'].where(~df['community'].str.contains('water'), 'water')
-#df['community'] = df['community'].where(~df['community'].str.contains('management|economics'), 'economics')
-#df['community'] = df['community'].where(~df['community'].str.contains('agriculture|agronomy'), 'agriculture agronomy')
-#df['community'] = df['community'].where(~df['community'].str.contains('materials'), 'materials')
-#df['community'] = df['community'].where(~df['community'].str.contains('forestry'), 'forestry')
-#df['community'] = df['community'].where(df['community'].str.contains('environmental|energy|chemical|water|economics|agriculture|materials|forestry'), 'forestry')
+df['community'] = df['community'].where(~df['community'].str.contains('environmental|ecology'), 'environmental')
+df['community'] = df['community'].where(~df['community'].str.contains('energy|fuels'), 'energy')
+df['community'] = df['community'].where(~df['community'].str.contains('chemistry|chemical'), 'chemical')
+df['community'] = df['community'].where(~df['community'].str.contains('water'), 'water')
+df['community'] = df['community'].where(~df['community'].str.contains('management|economics'), 'economics')
+df['community'] = df['community'].where(~df['community'].str.contains('agriculture|agronomy'), 'agriculture agronomy')
+df['community'] = df['community'].where(~df['community'].str.contains('materials'), 'materials')
+df['community'] = df['community'].where(~df['community'].str.contains('forestry'), 'forestry')
+#df['community'] = df['community'].where(df['community'].str.contains('environmental|energy|chemical|water|economics|agriculture|materials|forestry'), 'miscellaneous')
 
 ############### community data exploration
 df['community'] = df['community'].str.split()
@@ -81,7 +81,12 @@ print(count_data)
 #plt.savefig('./figures/word_category_frequencies_before.pdf')
 #############
 
-
+################ Tagging Task
+print(df)
+pos_tagged = df[df['majority_rating']==1]
+neg_tagged = df[df['majority_rating']==0]
+print(pos_tagged['community'].value_counts())
+print(neg_tagged['community'].value_counts())
 
 
 
