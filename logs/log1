@@ -3792,3 +3792,523 @@ INFO - 11:46:06: Pairs with unknown words ratio: 0.0%
 INFO - 11:46:08: Pearson correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.6434
 INFO - 11:46:08: Spearman rank-order correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.6215
 INFO - 11:46:08: Pairs with unknown words ratio: 0.0%
+INFO - 12:04:26: collecting all words and their counts
+INFO - 12:04:26: PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+INFO - 12:04:26: PROGRESS: at sentence #10000, processed 1226738 words, keeping 56051 word types
+INFO - 12:04:27: PROGRESS: at sentence #20000, processed 2491543 words, keeping 84309 word types
+INFO - 12:04:27: PROGRESS: at sentence #30000, processed 3730185 words, keeping 106379 word types
+INFO - 12:04:27: PROGRESS: at sentence #40000, processed 4850095 words, keeping 124252 word types
+INFO - 12:04:27: collected 137795 word types from a corpus of 5786433 raw words and 47921 sentences
+INFO - 12:04:27: Loading a fresh vocabulary
+INFO - 12:04:29: min_count=1 retains 137795 unique words (100% of original 137795, drops 0)
+INFO - 12:04:29: min_count=1 leaves 5786433 word corpus (100% of original 5786433, drops 0)
+INFO - 12:04:29: deleting the raw counts dictionary of 137795 items
+INFO - 12:04:29: sample=0.001 downsamples 16 most-common words
+INFO - 12:04:29: downsampling leaves estimated 5707181 word corpus (98.6% of prior 5786433)
+INFO - 12:04:30: estimated required memory for 137795 words and 200 dimensions: 289369500 bytes
+INFO - 12:04:30: resetting layer weights
+INFO - 12:04:33: training model with 4 workers on 137795 vocabulary and 200 features, using sg=0 hs=0 sample=0.001 negative=5 window=5
+INFO - 12:04:34: EPOCH 1 - PROGRESS: at 9.22% examples, 503380 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:35: EPOCH 1 - PROGRESS: at 19.84% examples, 564533 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:36: EPOCH 1 - PROGRESS: at 31.00% examples, 593223 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:37: EPOCH 1 - PROGRESS: at 42.26% examples, 607718 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:38: EPOCH 1 - PROGRESS: at 54.09% examples, 616085 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:39: EPOCH 1 - PROGRESS: at 64.93% examples, 621043 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:40: EPOCH 1 - PROGRESS: at 77.81% examples, 625851 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:41: EPOCH 1 - PROGRESS: at 89.20% examples, 624602 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:42: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:04:42: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:04:42: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:04:42: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:04:42: EPOCH - 1 : training on 5786433 raw words (5707019 effective words) took 9.1s, 627951 effective words/s
+INFO - 12:04:43: EPOCH 2 - PROGRESS: at 11.04% examples, 615840 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:44: EPOCH 2 - PROGRESS: at 22.52% examples, 637975 words/s, in_qsize 8, out_qsize 0
+INFO - 12:04:45: EPOCH 2 - PROGRESS: at 32.99% examples, 640803 words/s, in_qsize 6, out_qsize 1
+INFO - 12:04:46: EPOCH 2 - PROGRESS: at 44.55% examples, 641435 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:47: EPOCH 2 - PROGRESS: at 56.26% examples, 642687 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:48: EPOCH 2 - PROGRESS: at 67.15% examples, 643788 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:49: EPOCH 2 - PROGRESS: at 80.26% examples, 644481 words/s, in_qsize 6, out_qsize 1
+INFO - 12:04:50: EPOCH 2 - PROGRESS: at 92.69% examples, 645551 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:51: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:04:51: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:04:51: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:04:51: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:04:51: EPOCH - 2 : training on 5786433 raw words (5707783 effective words) took 8.8s, 647365 effective words/s
+INFO - 12:04:52: EPOCH 3 - PROGRESS: at 11.55% examples, 633356 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:53: EPOCH 3 - PROGRESS: at 23.60% examples, 656500 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:54: EPOCH 3 - PROGRESS: at 34.40% examples, 662236 words/s, in_qsize 6, out_qsize 1
+INFO - 12:04:55: EPOCH 3 - PROGRESS: at 45.96% examples, 658362 words/s, in_qsize 7, out_qsize 0
+INFO - 12:04:56: EPOCH 3 - PROGRESS: at 56.84% examples, 650200 words/s, in_qsize 7, out_qsize 1
+INFO - 12:04:57: EPOCH 3 - PROGRESS: at 67.15% examples, 645540 words/s, in_qsize 8, out_qsize 2
+INFO - 12:04:58: EPOCH 3 - PROGRESS: at 79.94% examples, 644582 words/s, in_qsize 6, out_qsize 1
+INFO - 12:04:59: EPOCH 3 - PROGRESS: at 91.57% examples, 641788 words/s, in_qsize 7, out_qsize 0
+INFO - 12:05:00: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:05:00: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:05:00: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:05:00: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:05:00: EPOCH - 3 : training on 5786433 raw words (5707289 effective words) took 8.9s, 640790 effective words/s
+INFO - 12:05:01: EPOCH 4 - PROGRESS: at 11.04% examples, 597791 words/s, in_qsize 8, out_qsize 2
+INFO - 12:05:02: EPOCH 4 - PROGRESS: at 22.97% examples, 643018 words/s, in_qsize 7, out_qsize 0
+INFO - 12:05:03: EPOCH 4 - PROGRESS: at 34.24% examples, 659725 words/s, in_qsize 8, out_qsize 1
+INFO - 12:05:04: EPOCH 4 - PROGRESS: at 46.33% examples, 664274 words/s, in_qsize 7, out_qsize 1
+INFO - 12:05:05: EPOCH 4 - PROGRESS: at 58.21% examples, 669858 words/s, in_qsize 8, out_qsize 0
+INFO - 12:05:06: EPOCH 4 - PROGRESS: at 69.33% examples, 668879 words/s, in_qsize 8, out_qsize 0
+INFO - 12:05:07: EPOCH 4 - PROGRESS: at 82.96% examples, 670631 words/s, in_qsize 7, out_qsize 0
+INFO - 12:05:08: EPOCH 4 - PROGRESS: at 95.66% examples, 672624 words/s, in_qsize 7, out_qsize 0
+INFO - 12:05:08: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:05:08: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:05:08: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:05:08: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:05:08: EPOCH - 4 : training on 5786433 raw words (5707243 effective words) took 8.4s, 675600 effective words/s
+INFO - 12:05:09: EPOCH 5 - PROGRESS: at 9.56% examples, 537747 words/s, in_qsize 8, out_qsize 0
+INFO - 12:05:10: EPOCH 5 - PROGRESS: at 20.75% examples, 595761 words/s, in_qsize 8, out_qsize 0
+INFO - 12:05:11: EPOCH 5 - PROGRESS: at 31.15% examples, 597780 words/s, in_qsize 7, out_qsize 0
+INFO - 12:05:12: EPOCH 5 - PROGRESS: at 40.59% examples, 588833 words/s, in_qsize 7, out_qsize 0
+INFO - 12:05:13: EPOCH 5 - PROGRESS: at 51.88% examples, 594910 words/s, in_qsize 6, out_qsize 1
+INFO - 12:05:14: EPOCH 5 - PROGRESS: at 63.15% examples, 607667 words/s, in_qsize 7, out_qsize 0
+INFO - 12:05:16: EPOCH 5 - PROGRESS: at 76.46% examples, 618150 words/s, in_qsize 7, out_qsize 0
+INFO - 12:05:17: EPOCH 5 - PROGRESS: at 87.07% examples, 610048 words/s, in_qsize 8, out_qsize 1
+INFO - 12:05:18: EPOCH 5 - PROGRESS: at 97.18% examples, 603990 words/s, in_qsize 7, out_qsize 0
+INFO - 12:05:18: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:05:18: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:05:18: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:05:18: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:05:18: EPOCH - 5 : training on 5786433 raw words (5707300 effective words) took 9.4s, 604150 effective words/s
+INFO - 12:05:18: training on a 28932165 raw words (28536634 effective words) took 44.7s, 637964 effective words/s
+INFO - 12:05:18: saving Word2Vec object under runs/emb_c_mcc_1985_2009.list.model, separately None
+INFO - 12:05:18: storing np array 'vectors' to runs/emb_c_mcc_1985_2009.list.model.wv.vectors.npy
+INFO - 12:05:18: not storing attribute vectors_norm
+INFO - 12:05:18: storing np array 'syn1neg' to runs/emb_c_mcc_1985_2009.list.model.trainables.syn1neg.npy
+INFO - 12:05:18: not storing attribute cum_table
+INFO - 12:05:19: saved runs/emb_c_mcc_1985_2009.list.model
+INFO - 12:05:19: precomputing L2-norms of word weight vectors
+INFO - 12:05:23: capital-common-countries: 5.5% (21/380)
+INFO - 12:05:31: capital-world: 3.4% (28/833)
+INFO - 12:05:31: currency: 0.0% (0/10)
+INFO - 12:05:33: city-in-state: 10.7% (14/131)
+INFO - 12:05:33: family: 0.0% (0/20)
+INFO - 12:05:39: gram1-adjective-to-adverb: 2.2% (11/506)
+INFO - 12:05:41: gram2-opposite: 7.3% (25/342)
+INFO - 12:05:53: gram3-comparative: 24.0% (269/1122)
+INFO - 12:05:57: gram4-superlative: 6.3% (24/380)
+INFO - 12:06:05: gram5-present-participle: 12.5% (81/650)
+INFO - 12:06:19: gram6-nationality-adjective: 14.3% (186/1299)
+INFO - 12:06:26: gram7-past-tense: 14.8% (120/812)
+INFO - 12:06:35: gram8-plural: 12.1% (105/870)
+INFO - 12:06:40: gram9-plural-verbs: 17.6% (74/420)
+INFO - 12:06:40: total: 12.3% (958/7775)
+INFO - 12:06:41: Pearson correlation coefficient against eval_data/wordsim353.tsv: 0.3612
+INFO - 12:06:41: Spearman rank-order correlation coefficient against eval_data/wordsim353.tsv: 0.3684
+INFO - 12:06:41: Pairs with unknown words ratio: 8.5%
+INFO - 12:06:42: Pearson correlation coefficient against eval_data/wordsim_relatedness_goldstandard.txt: 0.2688
+INFO - 12:06:42: Spearman rank-order correlation coefficient against eval_data/wordsim_relatedness_goldstandard.txt: 0.2963
+INFO - 12:06:42: Pairs with unknown words ratio: 7.1%
+INFO - 12:06:43: Pearson correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.4670
+INFO - 12:06:43: Spearman rank-order correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.4547
+INFO - 12:06:43: Pairs with unknown words ratio: 8.4%
+WARNING - 12:06:47: Effective 'alpha' higher than previous training cycles
+INFO - 12:06:47: training model with 4 workers on 137795 vocabulary and 200 features, using sg=0 hs=0 sample=0.001 negative=5 window=5
+INFO - 12:06:48: EPOCH 1 - PROGRESS: at 4.73% examples, 261646 words/s, in_qsize 8, out_qsize 0
+INFO - 12:06:49: EPOCH 1 - PROGRESS: at 13.19% examples, 382617 words/s, in_qsize 7, out_qsize 0
+INFO - 12:06:50: EPOCH 1 - PROGRESS: at 19.82% examples, 384297 words/s, in_qsize 7, out_qsize 0
+INFO - 12:06:51: EPOCH 1 - PROGRESS: at 24.89% examples, 367023 words/s, in_qsize 6, out_qsize 1
+INFO - 12:06:52: EPOCH 1 - PROGRESS: at 29.72% examples, 350628 words/s, in_qsize 8, out_qsize 0
+INFO - 12:06:53: EPOCH 1 - PROGRESS: at 35.50% examples, 344860 words/s, in_qsize 7, out_qsize 0
+INFO - 12:06:54: EPOCH 1 - PROGRESS: at 40.81% examples, 338671 words/s, in_qsize 7, out_qsize 0
+INFO - 12:06:55: EPOCH 1 - PROGRESS: at 46.11% examples, 334038 words/s, in_qsize 8, out_qsize 0
+INFO - 12:06:56: EPOCH 1 - PROGRESS: at 51.58% examples, 331917 words/s, in_qsize 7, out_qsize 0
+INFO - 12:06:57: EPOCH 1 - PROGRESS: at 57.00% examples, 330144 words/s, in_qsize 7, out_qsize 0
+INFO - 12:06:58: EPOCH 1 - PROGRESS: at 62.00% examples, 327100 words/s, in_qsize 7, out_qsize 0
+INFO - 12:06:59: EPOCH 1 - PROGRESS: at 68.51% examples, 328894 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:00: EPOCH 1 - PROGRESS: at 75.27% examples, 328442 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:01: EPOCH 1 - PROGRESS: at 81.30% examples, 327358 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:02: EPOCH 1 - PROGRESS: at 87.20% examples, 325350 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:03: EPOCH 1 - PROGRESS: at 94.21% examples, 327526 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:04: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:07:04: EPOCH 1 - PROGRESS: at 99.67% examples, 326605 words/s, in_qsize 2, out_qsize 1
+INFO - 12:07:04: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:07:04: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:07:04: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:07:04: EPOCH - 1 : training on 5874821 raw words (5671986 effective words) took 17.4s, 326830 effective words/s
+INFO - 12:07:05: EPOCH 2 - PROGRESS: at 4.57% examples, 249707 words/s, in_qsize 8, out_qsize 0
+INFO - 12:07:06: EPOCH 2 - PROGRESS: at 9.65% examples, 274609 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:07: EPOCH 2 - PROGRESS: at 15.28% examples, 290219 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:08: EPOCH 2 - PROGRESS: at 20.45% examples, 295870 words/s, in_qsize 6, out_qsize 1
+INFO - 12:07:09: EPOCH 2 - PROGRESS: at 26.30% examples, 308865 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:10: EPOCH 2 - PROGRESS: at 35.51% examples, 344394 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:11: EPOCH 2 - PROGRESS: at 45.95% examples, 381896 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:13: EPOCH 2 - PROGRESS: at 53.46% examples, 387525 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:14: EPOCH 2 - PROGRESS: at 59.83% examples, 386588 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:15: EPOCH 2 - PROGRESS: at 65.88% examples, 380575 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:16: EPOCH 2 - PROGRESS: at 72.41% examples, 374597 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:17: EPOCH 2 - PROGRESS: at 78.66% examples, 369858 words/s, in_qsize 8, out_qsize 0
+INFO - 12:07:18: EPOCH 2 - PROGRESS: at 85.33% examples, 367007 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:19: EPOCH 2 - PROGRESS: at 91.72% examples, 363697 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:20: EPOCH 2 - PROGRESS: at 97.38% examples, 360399 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:20: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:07:20: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:07:20: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:07:20: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:07:20: EPOCH - 2 : training on 5874821 raw words (5671460 effective words) took 15.7s, 360273 effective words/s
+INFO - 12:07:21: EPOCH 3 - PROGRESS: at 5.22% examples, 290836 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:22: EPOCH 3 - PROGRESS: at 10.75% examples, 312257 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:23: EPOCH 3 - PROGRESS: at 16.60% examples, 320021 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:24: EPOCH 3 - PROGRESS: at 22.40% examples, 324124 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:25: EPOCH 3 - PROGRESS: at 27.86% examples, 327107 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:26: EPOCH 3 - PROGRESS: at 33.07% examples, 322898 words/s, in_qsize 6, out_qsize 1
+INFO - 12:07:27: EPOCH 3 - PROGRESS: at 38.60% examples, 321634 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:28: EPOCH 3 - PROGRESS: at 44.47% examples, 322288 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:29: EPOCH 3 - PROGRESS: at 50.26% examples, 322871 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:30: EPOCH 3 - PROGRESS: at 56.01% examples, 322946 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:31: EPOCH 3 - PROGRESS: at 61.82% examples, 324707 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:32: EPOCH 3 - PROGRESS: at 68.10% examples, 325187 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:33: EPOCH 3 - PROGRESS: at 77.39% examples, 334630 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:34: EPOCH 3 - PROGRESS: at 86.84% examples, 345222 words/s, in_qsize 8, out_qsize 0
+INFO - 12:07:35: EPOCH 3 - PROGRESS: at 93.85% examples, 346054 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:36: EPOCH 3 - PROGRESS: at 99.06% examples, 343486 words/s, in_qsize 6, out_qsize 0
+INFO - 12:07:37: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:07:37: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:07:37: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:07:37: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:07:37: EPOCH - 3 : training on 5874821 raw words (5671808 effective words) took 16.5s, 344291 effective words/s
+INFO - 12:07:38: EPOCH 4 - PROGRESS: at 4.57% examples, 250773 words/s, in_qsize 6, out_qsize 1
+INFO - 12:07:39: EPOCH 4 - PROGRESS: at 9.03% examples, 255480 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:40: EPOCH 4 - PROGRESS: at 13.86% examples, 261982 words/s, in_qsize 8, out_qsize 1
+INFO - 12:07:41: EPOCH 4 - PROGRESS: at 19.36% examples, 276570 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:42: EPOCH 4 - PROGRESS: at 28.17% examples, 327964 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:43: EPOCH 4 - PROGRESS: at 38.76% examples, 373864 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:44: EPOCH 4 - PROGRESS: at 44.96% examples, 370969 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:45: EPOCH 4 - PROGRESS: at 53.96% examples, 388251 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:46: EPOCH 4 - PROGRESS: at 62.87% examples, 399574 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:47: EPOCH 4 - PROGRESS: at 71.45% examples, 403820 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:48: EPOCH 4 - PROGRESS: at 82.80% examples, 419269 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:49: EPOCH 4 - PROGRESS: at 93.69% examples, 428686 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:50: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:07:50: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:07:50: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:07:50: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:07:50: EPOCH - 4 : training on 5874821 raw words (5671652 effective words) took 13.0s, 437947 effective words/s
+INFO - 12:07:51: EPOCH 5 - PROGRESS: at 8.71% examples, 484439 words/s, in_qsize 6, out_qsize 1
+INFO - 12:07:52: EPOCH 5 - PROGRESS: at 17.09% examples, 479780 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:53: EPOCH 5 - PROGRESS: at 24.46% examples, 473376 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:54: EPOCH 5 - PROGRESS: at 33.78% examples, 492975 words/s, in_qsize 8, out_qsize 0
+INFO - 12:07:55: EPOCH 5 - PROGRESS: at 41.82% examples, 487002 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:56: EPOCH 5 - PROGRESS: at 49.45% examples, 478962 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:57: EPOCH 5 - PROGRESS: at 57.93% examples, 481389 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:58: EPOCH 5 - PROGRESS: at 66.76% examples, 483158 words/s, in_qsize 7, out_qsize 0
+INFO - 12:07:59: EPOCH 5 - PROGRESS: at 74.53% examples, 472125 words/s, in_qsize 6, out_qsize 1
+INFO - 12:08:00: EPOCH 5 - PROGRESS: at 83.58% examples, 470386 words/s, in_qsize 5, out_qsize 2
+INFO - 12:08:01: EPOCH 5 - PROGRESS: at 93.33% examples, 471929 words/s, in_qsize 7, out_qsize 0
+INFO - 12:08:01: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:08:01: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:08:02: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:08:02: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:08:02: EPOCH - 5 : training on 5874821 raw words (5671748 effective words) took 12.0s, 473950 effective words/s
+INFO - 12:08:02: training on a 29374105 raw words (28358654 effective words) took 74.5s, 380497 effective words/s
+INFO - 12:08:02: saving Word2Vec object under runs/emb_c_mcc_2009_2013.list.model, separately None
+INFO - 12:08:02: storing np array 'vectors' to runs/emb_c_mcc_2009_2013.list.model.wv.vectors.npy
+INFO - 12:08:02: not storing attribute vectors_norm
+INFO - 12:08:02: storing np array 'syn1neg' to runs/emb_c_mcc_2009_2013.list.model.trainables.syn1neg.npy
+INFO - 12:08:02: not storing attribute cum_table
+INFO - 12:08:03: saved runs/emb_c_mcc_2009_2013.list.model
+INFO - 12:08:03: precomputing L2-norms of word weight vectors
+INFO - 12:08:10: capital-common-countries: 10.0% (38/380)
+INFO - 12:08:20: capital-world: 8.9% (74/833)
+INFO - 12:08:20: currency: 0.0% (0/10)
+INFO - 12:08:21: city-in-state: 11.5% (15/131)
+INFO - 12:08:21: family: 0.0% (0/20)
+INFO - 12:08:27: gram1-adjective-to-adverb: 4.0% (20/506)
+INFO - 12:08:30: gram2-opposite: 9.9% (34/342)
+INFO - 12:08:44: gram3-comparative: 38.8% (435/1122)
+INFO - 12:08:49: gram4-superlative: 20.3% (77/380)
+INFO - 12:08:55: gram5-present-participle: 16.9% (110/650)
+INFO - 12:09:08: gram6-nationality-adjective: 25.4% (330/1299)
+INFO - 12:09:15: gram7-past-tense: 20.3% (165/812)
+INFO - 12:09:23: gram8-plural: 28.2% (245/870)
+INFO - 12:09:28: gram9-plural-verbs: 23.3% (98/420)
+INFO - 12:09:28: total: 21.1% (1641/7775)
+INFO - 12:09:28: Pearson correlation coefficient against eval_data/wordsim353.tsv: 0.4015
+INFO - 12:09:28: Spearman rank-order correlation coefficient against eval_data/wordsim353.tsv: 0.4217
+INFO - 12:09:28: Pairs with unknown words ratio: 8.5%
+INFO - 12:09:30: Pearson correlation coefficient against eval_data/wordsim_relatedness_goldstandard.txt: 0.3068
+INFO - 12:09:30: Spearman rank-order correlation coefficient against eval_data/wordsim_relatedness_goldstandard.txt: 0.3504
+INFO - 12:09:30: Pairs with unknown words ratio: 7.1%
+INFO - 12:09:30: Pearson correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.5167
+INFO - 12:09:30: Spearman rank-order correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.5173
+INFO - 12:09:30: Pairs with unknown words ratio: 8.4%
+WARNING - 12:09:34: Effective 'alpha' higher than previous training cycles
+INFO - 12:09:34: training model with 4 workers on 137795 vocabulary and 200 features, using sg=0 hs=0 sample=0.001 negative=5 window=5
+INFO - 12:09:35: EPOCH 1 - PROGRESS: at 4.88% examples, 367557 words/s, in_qsize 6, out_qsize 1
+INFO - 12:09:36: EPOCH 1 - PROGRESS: at 8.90% examples, 328638 words/s, in_qsize 8, out_qsize 0
+INFO - 12:09:37: EPOCH 1 - PROGRESS: at 13.82% examples, 345789 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:38: EPOCH 1 - PROGRESS: at 18.98% examples, 357560 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:39: EPOCH 1 - PROGRESS: at 22.93% examples, 347053 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:40: EPOCH 1 - PROGRESS: at 27.21% examples, 341311 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:41: EPOCH 1 - PROGRESS: at 31.01% examples, 330696 words/s, in_qsize 6, out_qsize 1
+INFO - 12:09:42: EPOCH 1 - PROGRESS: at 35.06% examples, 325884 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:43: EPOCH 1 - PROGRESS: at 38.80% examples, 320358 words/s, in_qsize 6, out_qsize 1
+INFO - 12:09:44: EPOCH 1 - PROGRESS: at 43.17% examples, 321246 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:46: EPOCH 1 - PROGRESS: at 47.82% examples, 320503 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:47: EPOCH 1 - PROGRESS: at 53.10% examples, 326963 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:48: EPOCH 1 - PROGRESS: at 59.93% examples, 341780 words/s, in_qsize 6, out_qsize 1
+INFO - 12:09:49: EPOCH 1 - PROGRESS: at 66.19% examples, 351282 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:50: EPOCH 1 - PROGRESS: at 74.32% examples, 365913 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:51: EPOCH 1 - PROGRESS: at 80.93% examples, 369639 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:52: EPOCH 1 - PROGRESS: at 84.96% examples, 365101 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:53: EPOCH 1 - PROGRESS: at 91.67% examples, 369263 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:54: EPOCH 1 - PROGRESS: at 97.42% examples, 371259 words/s, in_qsize 6, out_qsize 1
+INFO - 12:09:54: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:09:54: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:09:54: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:09:54: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:09:54: EPOCH - 1 : training on 7743779 raw words (7444452 effective words) took 20.0s, 371658 effective words/s
+INFO - 12:09:55: EPOCH 2 - PROGRESS: at 3.51% examples, 250401 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:56: EPOCH 2 - PROGRESS: at 8.13% examples, 287513 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:57: EPOCH 2 - PROGRESS: at 12.37% examples, 295843 words/s, in_qsize 6, out_qsize 1
+INFO - 12:09:58: EPOCH 2 - PROGRESS: at 17.62% examples, 321882 words/s, in_qsize 7, out_qsize 0
+INFO - 12:09:59: EPOCH 2 - PROGRESS: at 24.03% examples, 355987 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:00: EPOCH 2 - PROGRESS: at 30.63% examples, 378590 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:01: EPOCH 2 - PROGRESS: at 35.34% examples, 375079 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:02: EPOCH 2 - PROGRESS: at 39.81% examples, 369071 words/s, in_qsize 8, out_qsize 0
+INFO - 12:10:03: EPOCH 2 - PROGRESS: at 44.16% examples, 363894 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:04: EPOCH 2 - PROGRESS: at 49.20% examples, 364708 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:05: EPOCH 2 - PROGRESS: at 54.78% examples, 369233 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:06: EPOCH 2 - PROGRESS: at 59.69% examples, 369687 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:08: EPOCH 2 - PROGRESS: at 66.06% examples, 378253 words/s, in_qsize 6, out_qsize 1
+INFO - 12:10:09: EPOCH 2 - PROGRESS: at 71.46% examples, 378905 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:10: EPOCH 2 - PROGRESS: at 77.41% examples, 378604 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:11: EPOCH 2 - PROGRESS: at 83.94% examples, 383299 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:12: EPOCH 2 - PROGRESS: at 90.86% examples, 387944 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:13: EPOCH 2 - PROGRESS: at 95.56% examples, 382298 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:14: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:10:14: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:10:14: EPOCH 2 - PROGRESS: at 99.90% examples, 379682 words/s, in_qsize 1, out_qsize 1
+INFO - 12:10:14: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:10:14: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:10:14: EPOCH - 2 : training on 7743779 raw words (7444943 effective words) took 19.6s, 380034 effective words/s
+INFO - 12:10:15: EPOCH 3 - PROGRESS: at 3.63% examples, 270018 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:16: EPOCH 3 - PROGRESS: at 7.50% examples, 281864 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:17: EPOCH 3 - PROGRESS: at 11.63% examples, 287844 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:18: EPOCH 3 - PROGRESS: at 15.49% examples, 289601 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:19: EPOCH 3 - PROGRESS: at 19.69% examples, 294355 words/s, in_qsize 6, out_qsize 1
+INFO - 12:10:20: EPOCH 3 - PROGRESS: at 23.79% examples, 296942 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:21: EPOCH 3 - PROGRESS: at 27.61% examples, 296446 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:22: EPOCH 3 - PROGRESS: at 31.87% examples, 298174 words/s, in_qsize 6, out_qsize 1
+INFO - 12:10:23: EPOCH 3 - PROGRESS: at 36.75% examples, 305049 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:24: EPOCH 3 - PROGRESS: at 40.84% examples, 303841 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:25: EPOCH 3 - PROGRESS: at 44.79% examples, 303339 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:26: EPOCH 3 - PROGRESS: at 48.81% examples, 301609 words/s, in_qsize 8, out_qsize 1
+INFO - 12:10:27: EPOCH 3 - PROGRESS: at 55.15% examples, 314459 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:28: EPOCH 3 - PROGRESS: at 61.87% examples, 328552 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:29: EPOCH 3 - PROGRESS: at 68.25% examples, 337741 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:30: EPOCH 3 - PROGRESS: at 73.34% examples, 338680 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:31: EPOCH 3 - PROGRESS: at 80.22% examples, 344212 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:32: EPOCH 3 - PROGRESS: at 84.31% examples, 341489 words/s, in_qsize 8, out_qsize 0
+INFO - 12:10:33: EPOCH 3 - PROGRESS: at 88.60% examples, 335534 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:34: EPOCH 3 - PROGRESS: at 93.54% examples, 335748 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:36: EPOCH 3 - PROGRESS: at 98.15% examples, 336051 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:36: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:10:36: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:10:36: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:10:36: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:10:36: EPOCH - 3 : training on 7743779 raw words (7444432 effective words) took 22.2s, 335143 effective words/s
+INFO - 12:10:37: EPOCH 4 - PROGRESS: at 3.63% examples, 275273 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:38: EPOCH 4 - PROGRESS: at 8.51% examples, 323181 words/s, in_qsize 6, out_qsize 1
+INFO - 12:10:39: EPOCH 4 - PROGRESS: at 13.47% examples, 341798 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:40: EPOCH 4 - PROGRESS: at 18.85% examples, 359442 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:41: EPOCH 4 - PROGRESS: at 23.31% examples, 357424 words/s, in_qsize 8, out_qsize 0
+INFO - 12:10:42: EPOCH 4 - PROGRESS: at 27.21% examples, 347715 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:43: EPOCH 4 - PROGRESS: at 32.51% examples, 353728 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:44: EPOCH 4 - PROGRESS: at 39.06% examples, 369245 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:45: EPOCH 4 - PROGRESS: at 46.61% examples, 391678 words/s, in_qsize 8, out_qsize 1
+INFO - 12:10:46: EPOCH 4 - PROGRESS: at 54.12% examples, 407907 words/s, in_qsize 6, out_qsize 1
+INFO - 12:10:47: EPOCH 4 - PROGRESS: at 61.87% examples, 424617 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:48: EPOCH 4 - PROGRESS: at 69.55% examples, 436782 words/s, in_qsize 8, out_qsize 0
+INFO - 12:10:49: EPOCH 4 - PROGRESS: at 77.84% examples, 445892 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:50: EPOCH 4 - PROGRESS: at 85.38% examples, 451491 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:51: EPOCH 4 - PROGRESS: at 92.23% examples, 451884 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:52: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:10:52: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:10:52: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:10:52: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:10:52: EPOCH - 4 : training on 7743779 raw words (7444739 effective words) took 16.2s, 460202 effective words/s
+INFO - 12:10:53: EPOCH 5 - PROGRESS: at 5.51% examples, 414245 words/s, in_qsize 8, out_qsize 0
+INFO - 12:10:54: EPOCH 5 - PROGRESS: at 12.13% examples, 458562 words/s, in_qsize 7, out_qsize 1
+INFO - 12:10:55: EPOCH 5 - PROGRESS: at 18.13% examples, 461414 words/s, in_qsize 8, out_qsize 0
+INFO - 12:10:56: EPOCH 5 - PROGRESS: at 23.19% examples, 445004 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:57: EPOCH 5 - PROGRESS: at 28.78% examples, 440636 words/s, in_qsize 8, out_qsize 1
+INFO - 12:10:58: EPOCH 5 - PROGRESS: at 34.43% examples, 435953 words/s, in_qsize 7, out_qsize 0
+INFO - 12:10:59: EPOCH 5 - PROGRESS: at 39.18% examples, 423733 words/s, in_qsize 8, out_qsize 0
+INFO - 12:11:00: EPOCH 5 - PROGRESS: at 43.78% examples, 414021 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:01: EPOCH 5 - PROGRESS: at 48.94% examples, 409838 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:02: EPOCH 5 - PROGRESS: at 54.37% examples, 409640 words/s, in_qsize 8, out_qsize 0
+INFO - 12:11:03: EPOCH 5 - PROGRESS: at 59.57% examples, 408183 words/s, in_qsize 8, out_qsize 0
+INFO - 12:11:04: EPOCH 5 - PROGRESS: at 64.34% examples, 404393 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:05: EPOCH 5 - PROGRESS: at 68.51% examples, 397405 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:06: EPOCH 5 - PROGRESS: at 72.90% examples, 391236 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:07: EPOCH 5 - PROGRESS: at 77.84% examples, 386008 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:08: EPOCH 5 - PROGRESS: at 83.18% examples, 384761 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:09: EPOCH 5 - PROGRESS: at 88.31% examples, 382875 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:10: EPOCH 5 - PROGRESS: at 92.88% examples, 379053 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:11: EPOCH 5 - PROGRESS: at 97.18% examples, 375299 words/s, in_qsize 7, out_qsize 0
+INFO - 12:11:12: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:11:12: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:11:12: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:11:12: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:11:12: EPOCH - 5 : training on 7743779 raw words (7444425 effective words) took 20.0s, 372455 effective words/s
+INFO - 12:11:12: training on a 38718895 raw words (37222991 effective words) took 98.0s, 379641 effective words/s
+INFO - 12:11:12: saving Word2Vec object under runs/emb_c_mcc_2013_2016.list.model, separately None
+INFO - 12:11:12: storing np array 'vectors' to runs/emb_c_mcc_2013_2016.list.model.wv.vectors.npy
+INFO - 12:11:12: not storing attribute vectors_norm
+INFO - 12:11:12: storing np array 'syn1neg' to runs/emb_c_mcc_2013_2016.list.model.trainables.syn1neg.npy
+INFO - 12:11:13: not storing attribute cum_table
+INFO - 12:11:13: saved runs/emb_c_mcc_2013_2016.list.model
+INFO - 12:11:14: precomputing L2-norms of word weight vectors
+INFO - 12:11:20: capital-common-countries: 13.4% (51/380)
+INFO - 12:11:29: capital-world: 12.7% (106/833)
+INFO - 12:11:29: currency: 0.0% (0/10)
+INFO - 12:11:31: city-in-state: 6.9% (9/131)
+INFO - 12:11:31: family: 0.0% (0/20)
+INFO - 12:11:38: gram1-adjective-to-adverb: 6.7% (34/506)
+INFO - 12:11:42: gram2-opposite: 14.3% (49/342)
+INFO - 12:12:01: gram3-comparative: 53.0% (595/1122)
+INFO - 12:12:07: gram4-superlative: 33.2% (126/380)
+INFO - 12:12:14: gram5-present-participle: 17.8% (116/650)
+INFO - 12:12:24: gram6-nationality-adjective: 38.0% (494/1299)
+INFO - 12:12:27: gram7-past-tense: 22.5% (183/812)
+INFO - 12:12:33: gram8-plural: 33.6% (292/870)
+INFO - 12:12:36: gram9-plural-verbs: 24.5% (103/420)
+INFO - 12:12:36: total: 27.8% (2158/7775)
+INFO - 12:12:37: Pearson correlation coefficient against eval_data/wordsim353.tsv: 0.4300
+INFO - 12:12:37: Spearman rank-order correlation coefficient against eval_data/wordsim353.tsv: 0.4474
+INFO - 12:12:37: Pairs with unknown words ratio: 8.5%
+INFO - 12:12:38: Pearson correlation coefficient against eval_data/wordsim_relatedness_goldstandard.txt: 0.3466
+INFO - 12:12:38: Spearman rank-order correlation coefficient against eval_data/wordsim_relatedness_goldstandard.txt: 0.3914
+INFO - 12:12:38: Pairs with unknown words ratio: 7.1%
+INFO - 12:12:39: Pearson correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.5488
+INFO - 12:12:39: Spearman rank-order correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.5406
+INFO - 12:12:39: Pairs with unknown words ratio: 8.4%
+WARNING - 12:12:41: Effective 'alpha' higher than previous training cycles
+INFO - 12:12:41: training model with 4 workers on 137795 vocabulary and 200 features, using sg=0 hs=0 sample=0.001 negative=5 window=5
+INFO - 12:12:42: EPOCH 1 - PROGRESS: at 7.85% examples, 613234 words/s, in_qsize 7, out_qsize 0
+INFO - 12:12:43: EPOCH 1 - PROGRESS: at 16.38% examples, 643037 words/s, in_qsize 8, out_qsize 1
+INFO - 12:12:44: EPOCH 1 - PROGRESS: at 24.80% examples, 649363 words/s, in_qsize 7, out_qsize 0
+INFO - 12:12:45: EPOCH 1 - PROGRESS: at 33.37% examples, 653505 words/s, in_qsize 7, out_qsize 0
+INFO - 12:12:46: EPOCH 1 - PROGRESS: at 41.64% examples, 647844 words/s, in_qsize 7, out_qsize 0
+INFO - 12:12:47: EPOCH 1 - PROGRESS: at 49.92% examples, 643656 words/s, in_qsize 7, out_qsize 0
+INFO - 12:12:48: EPOCH 1 - PROGRESS: at 58.76% examples, 648881 words/s, in_qsize 8, out_qsize 0
+INFO - 12:12:49: EPOCH 1 - PROGRESS: at 66.80% examples, 648740 words/s, in_qsize 6, out_qsize 1
+INFO - 12:12:50: EPOCH 1 - PROGRESS: at 74.81% examples, 651449 words/s, in_qsize 8, out_qsize 0
+INFO - 12:12:51: EPOCH 1 - PROGRESS: at 82.29% examples, 648394 words/s, in_qsize 6, out_qsize 1
+INFO - 12:12:52: EPOCH 1 - PROGRESS: at 90.32% examples, 652088 words/s, in_qsize 7, out_qsize 0
+INFO - 12:12:53: EPOCH 1 - PROGRESS: at 98.56% examples, 653879 words/s, in_qsize 6, out_qsize 1
+INFO - 12:12:53: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:12:53: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:12:53: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:12:54: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:12:54: EPOCH - 1 : training on 8436087 raw words (8093394 effective words) took 12.4s, 655175 effective words/s
+INFO - 12:12:55: EPOCH 2 - PROGRESS: at 8.35% examples, 657321 words/s, in_qsize 8, out_qsize 1
+INFO - 12:12:56: EPOCH 2 - PROGRESS: at 17.01% examples, 665663 words/s, in_qsize 6, out_qsize 1
+INFO - 12:12:57: EPOCH 2 - PROGRESS: at 25.66% examples, 669658 words/s, in_qsize 8, out_qsize 1
+INFO - 12:12:58: EPOCH 2 - PROGRESS: at 34.55% examples, 675718 words/s, in_qsize 8, out_qsize 0
+INFO - 12:12:59: EPOCH 2 - PROGRESS: at 43.49% examples, 676846 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:00: EPOCH 2 - PROGRESS: at 52.00% examples, 672955 words/s, in_qsize 7, out_qsize 1
+INFO - 12:13:01: EPOCH 2 - PROGRESS: at 61.79% examples, 684259 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:02: EPOCH 2 - PROGRESS: at 69.87% examples, 681932 words/s, in_qsize 8, out_qsize 1
+INFO - 12:13:03: EPOCH 2 - PROGRESS: at 77.67% examples, 679106 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:04: EPOCH 2 - PROGRESS: at 85.97% examples, 683383 words/s, in_qsize 8, out_qsize 0
+INFO - 12:13:05: EPOCH 2 - PROGRESS: at 93.49% examples, 676789 words/s, in_qsize 8, out_qsize 2
+INFO - 12:13:05: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:13:05: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:13:05: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:13:05: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:13:05: EPOCH - 2 : training on 8436087 raw words (8092895 effective words) took 11.9s, 678710 effective words/s
+INFO - 12:13:07: EPOCH 3 - PROGRESS: at 6.90% examples, 517476 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:08: EPOCH 3 - PROGRESS: at 14.19% examples, 539598 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:09: EPOCH 3 - PROGRESS: at 22.82% examples, 583606 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:10: EPOCH 3 - PROGRESS: at 31.41% examples, 607455 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:11: EPOCH 3 - PROGRESS: at 40.07% examples, 618321 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:12: EPOCH 3 - PROGRESS: at 48.11% examples, 618988 words/s, in_qsize 8, out_qsize 0
+INFO - 12:13:13: EPOCH 3 - PROGRESS: at 56.13% examples, 617751 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:14: EPOCH 3 - PROGRESS: at 64.34% examples, 620132 words/s, in_qsize 8, out_qsize 1
+INFO - 12:13:15: EPOCH 3 - PROGRESS: at 72.30% examples, 623685 words/s, in_qsize 8, out_qsize 0
+INFO - 12:13:16: EPOCH 3 - PROGRESS: at 79.98% examples, 626385 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:17: EPOCH 3 - PROGRESS: at 87.51% examples, 628592 words/s, in_qsize 8, out_qsize 0
+INFO - 12:13:18: EPOCH 3 - PROGRESS: at 95.31% examples, 630483 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:18: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:13:18: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:13:18: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:13:18: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:13:18: EPOCH - 3 : training on 8436087 raw words (8093217 effective words) took 12.8s, 632424 effective words/s
+INFO - 12:13:19: EPOCH 4 - PROGRESS: at 5.66% examples, 454130 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:20: EPOCH 4 - PROGRESS: at 12.99% examples, 515480 words/s, in_qsize 8, out_qsize 0
+INFO - 12:13:21: EPOCH 4 - PROGRESS: at 20.45% examples, 534083 words/s, in_qsize 6, out_qsize 1
+INFO - 12:13:22: EPOCH 4 - PROGRESS: at 27.80% examples, 545512 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:23: EPOCH 4 - PROGRESS: at 36.70% examples, 573933 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:24: EPOCH 4 - PROGRESS: at 45.70% examples, 593930 words/s, in_qsize 6, out_qsize 1
+INFO - 12:13:25: EPOCH 4 - PROGRESS: at 54.05% examples, 601712 words/s, in_qsize 8, out_qsize 1
+INFO - 12:13:26: EPOCH 4 - PROGRESS: at 59.61% examples, 575764 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:27: EPOCH 4 - PROGRESS: at 64.46% examples, 553567 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:28: EPOCH 4 - PROGRESS: at 68.88% examples, 534850 words/s, in_qsize 8, out_qsize 0
+INFO - 12:13:29: EPOCH 4 - PROGRESS: at 72.98% examples, 518736 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:31: EPOCH 4 - PROGRESS: at 77.20% examples, 504146 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:32: EPOCH 4 - PROGRESS: at 81.53% examples, 493913 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:33: EPOCH 4 - PROGRESS: at 86.81% examples, 491063 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:34: EPOCH 4 - PROGRESS: at 92.62% examples, 490396 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:35: EPOCH 4 - PROGRESS: at 99.30% examples, 493452 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:35: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:13:35: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:13:35: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:13:35: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:13:35: EPOCH - 4 : training on 8436087 raw words (8093498 effective words) took 16.4s, 494020 effective words/s
+INFO - 12:13:36: EPOCH 5 - PROGRESS: at 3.19% examples, 256862 words/s, in_qsize 6, out_qsize 1
+INFO - 12:13:37: EPOCH 5 - PROGRESS: at 9.40% examples, 373612 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:38: EPOCH 5 - PROGRESS: at 15.67% examples, 412343 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:39: EPOCH 5 - PROGRESS: at 22.12% examples, 436560 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:40: EPOCH 5 - PROGRESS: at 31.41% examples, 495928 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:41: EPOCH 5 - PROGRESS: at 39.24% examples, 515675 words/s, in_qsize 8, out_qsize 0
+INFO - 12:13:42: EPOCH 5 - PROGRESS: at 47.40% examples, 531647 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:43: EPOCH 5 - PROGRESS: at 55.52% examples, 543670 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:44: EPOCH 5 - PROGRESS: at 62.61% examples, 541781 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:45: EPOCH 5 - PROGRESS: at 69.32% examples, 542825 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:46: EPOCH 5 - PROGRESS: at 75.50% examples, 540761 words/s, in_qsize 7, out_qsize 0
+INFO - 12:13:47: EPOCH 5 - PROGRESS: at 80.97% examples, 533805 words/s, in_qsize 6, out_qsize 1
+INFO - 12:13:48: EPOCH 5 - PROGRESS: at 86.94% examples, 531880 words/s, in_qsize 6, out_qsize 1
+INFO - 12:13:49: EPOCH 5 - PROGRESS: at 93.49% examples, 533143 words/s, in_qsize 8, out_qsize 1
+INFO - 12:13:50: worker thread finished; awaiting finish of 3 more threads
+INFO - 12:13:50: worker thread finished; awaiting finish of 2 more threads
+INFO - 12:13:50: worker thread finished; awaiting finish of 1 more threads
+INFO - 12:13:50: worker thread finished; awaiting finish of 0 more threads
+INFO - 12:13:50: EPOCH - 5 : training on 8436087 raw words (8093342 effective words) took 15.0s, 538207 effective words/s
+INFO - 12:13:50: training on a 42180435 raw words (40466346 effective words) took 68.5s, 590544 effective words/s
+INFO - 12:13:50: saving Word2Vec object under runs/emb_c_mcc_2016_2019.list.model, separately None
+INFO - 12:13:50: storing np array 'vectors' to runs/emb_c_mcc_2016_2019.list.model.wv.vectors.npy
+INFO - 12:13:50: not storing attribute vectors_norm
+INFO - 12:13:50: storing np array 'syn1neg' to runs/emb_c_mcc_2016_2019.list.model.trainables.syn1neg.npy
+INFO - 12:13:50: not storing attribute cum_table
+INFO - 12:13:51: saved runs/emb_c_mcc_2016_2019.list.model
+INFO - 12:13:52: precomputing L2-norms of word weight vectors
+INFO - 12:13:55: capital-common-countries: 20.5% (78/380)
+INFO - 12:13:58: capital-world: 19.6% (163/833)
+INFO - 12:13:58: currency: 0.0% (0/10)
+INFO - 12:13:58: city-in-state: 12.2% (16/131)
+INFO - 12:13:58: family: 0.0% (0/20)
+INFO - 12:14:00: gram1-adjective-to-adverb: 8.7% (44/506)
+INFO - 12:14:01: gram2-opposite: 12.0% (41/342)
+INFO - 12:14:10: gram3-comparative: 56.3% (632/1122)
+INFO - 12:14:13: gram4-superlative: 37.9% (144/380)
+INFO - 12:14:19: gram5-present-participle: 21.2% (138/650)
+INFO - 12:14:31: gram6-nationality-adjective: 41.4% (538/1299)
+INFO - 12:14:37: gram7-past-tense: 23.5% (191/812)
+INFO - 12:14:44: gram8-plural: 38.9% (338/870)
+INFO - 12:14:46: gram9-plural-verbs: 28.8% (121/420)
+INFO - 12:14:46: total: 31.4% (2444/7775)
+INFO - 12:14:47: Pearson correlation coefficient against eval_data/wordsim353.tsv: 0.4363
+INFO - 12:14:47: Spearman rank-order correlation coefficient against eval_data/wordsim353.tsv: 0.4549
+INFO - 12:14:47: Pairs with unknown words ratio: 8.5%
+INFO - 12:14:48: Pearson correlation coefficient against eval_data/wordsim_relatedness_goldstandard.txt: 0.3431
+INFO - 12:14:48: Spearman rank-order correlation coefficient against eval_data/wordsim_relatedness_goldstandard.txt: 0.3838
+INFO - 12:14:48: Pairs with unknown words ratio: 7.1%
+INFO - 12:14:49: Pearson correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.5667
+INFO - 12:14:49: Spearman rank-order correlation coefficient against eval_data/wordsim_similarity_goldstandard.txt: 0.5466
+INFO - 12:14:49: Pairs with unknown words ratio: 8.4%
