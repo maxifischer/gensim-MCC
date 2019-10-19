@@ -15,12 +15,12 @@ import pickle as pickle
 
 # PARAMETERS
 
-nw = 385456 # number of words in vocab (11068100/20936 for ngram/nyt)
+nw = 10392 # number of words in vocab (11068100/20936 for ngram/nyt)
 T = [1985, 2010, 2014, 2017] # total number of time points (20/range(27) for ngram/nyt)
 cuda = False
 
 trainhead = 'data/mcc_ppmi_' # location of training data
-savehead = 'results/'
+savehead = 'runs/'
     
 def print_params(r,lam,tau,gam,emph,ITERS):
     
@@ -62,8 +62,8 @@ if __name__=='__main__':
     print('X*X*X*X*X*X*X*X*X')
     print('initializing')
     
-    #Ulist,Vlist = util.initvars(nw,T,r, trainhead)
-    Ulist,Vlist = util.import_static_init(T)
+    Ulist,Vlist = util.initvars(nw,T,r)#, trainhead)
+    #Ulist,Vlist = util.import_static_init(T)
     print(Ulist)
     print(Vlist)
     print('getting batch indices')
@@ -80,7 +80,11 @@ if __name__=='__main__':
         try:
             Ulist = pickle.load(open( "%sngU_iter%d.p" % (savefile,iteration), "rb" ) )
             Vlist = pickle.load(open( "%sngV_iter%d.p" % (savefile, iteration), "rb" ) )
-            print('iteration %d loaded succesfully' % iteration)
+            print(len(Ulist))
+            print(len(Ulist[0]))
+            print(len(Vlist))
+            print(len(Vlist[0]))
+            print('iteration %d loaded successfully' % iteration)
             continue
         except(IOError):
             pass
@@ -99,16 +103,21 @@ if __name__=='__main__':
                 Ulist = pickle.load( open( "%sngU_iter%d_time%d_tmp.p" % (savefile,iteration,t), "rb" ) )
                 Vlist = pickle.load( open( "%sngV_iter%d_time%d_tmp.p" % (savefile, iteration,t), "rb" ) )
                 times = pickle.load( open( "%sngtimes_iter%d_time%d_tmp.p" % (savefile, iteration,t), "rb" ) )
-                print 'iteration %d time %d loaded succesfully' % (iteration, t)
+                print 'iteration %d time %d loaded successfully' % (iteration, t)
                 continue
             except(IOError):
                 pass
             """
             
             pmi = util.getmat(f,nw,False)
+            #b_ind = [range(pmi.shape[0])]
+            print(pmi.shape)
             for j in range(len(b_ind)): # select a mini batch
                 print('%d out of %d' % (j,len(b_ind)))
+                #print(b_ind)
+                #print(j)
                 ind = b_ind[j]
+                #print(ind)
                 ## UPDATE V
                 # get data
                 pmi_seg = pmi[:,ind].todense()
@@ -132,7 +141,8 @@ if __name__=='__main__':
                     iflag = False
                 Vlist[t][ind,:] = util.update(Ulist[t],emph*pmi_seg,vp,vn,lam,tau,gam,ind,iflag)
                 Ulist[t][ind,:] = util.update(Vlist[t],emph*pmi_seg,up,un,lam,tau,gam,ind,iflag)
-            
+                #print(Vlist.shape)
+                #print(Ulist.shape)
                 
             #pickle.dump(Ulist, open( "%sngU_iter%d_time%d_tmp.p" % (savefile,iteration,t), "wb" ) , pickle.HIGHEST_PROTOCOL)
             #pickle.dump(Vlist, open( "%sngV_iter%d_time%d_tmp.p" % (savefile, iteration,t), "wb" ) , pickle.HIGHEST_PROTOCOL)

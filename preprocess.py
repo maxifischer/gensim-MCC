@@ -19,6 +19,46 @@ print(df.shape)
 df = df.dropna()
 print(df.shape)
 
+prepr_abstracts = []
+all_abstracts = df['content'].tolist()
+for prepr in tqdm(all_abstracts):
+    prepr = prepr.lower()
+    prepr = re.sub(r'\d+', '', prepr)
+    prepr = prepr.translate(str.maketrans('','', string.punctuation))
+    prepr = prepr.strip()
+    prepr = word_tokenize(prepr)
+    prepr_abstracts.extend(prepr)
+freq_count = Counter(prepr_abstracts)
+print("counted")
+freq = [key for (key, value) in freq_count.most_common(21000)]
+
+#freq = freq_count[freq_count.values < 2]
+print(len(freq))
+#freq = list(freq.index)
+print(freq[:10])
+
+stop_words = set(stopwords.words('english'))
+more_prepr = [i for i in freq if not i in stop_words]
+
+tok2indx = dict()
+unigram_counts = Counter()
+for ii, abstract in enumerate([more_prepr]):
+    if ii % 200000 == 0:
+        print(f'finished {ii/len(more_prepr):.2%} of abstracts')
+    for token in abstract:
+        unigram_counts[token] += 1
+        if token not in tok2indx:
+            tok2indx[token] = len(tok2indx)
+indx2tok = {indx:tok for tok,indx in tok2indx.items()}
+print('done')
+print('vocabulary size: {}'.format(len(unigram_counts)))
+print('most common: {}'.format(unigram_counts.most_common(10)))
+with open("data/tok2idx.pkl", "wb") as f:
+    pickle.dump(tok2indx, f)
+
+with open("data/idx2tok.pkl", "wb") as f:
+    pickle.dump(indx2tok, f)
+
 df['PY'] = df['PY'].astype(int)
 print(df.groupby('PY').count())
 
@@ -62,8 +102,9 @@ for name, group in df.groupby('binned'):
 
         # 6. remove stop words
         #print("Removing stopwords...")
-        stop_words = set(stopwords.words('english'))
+        tmp = [i for i in tmp if i in freq]
         tmp = [i for i in tmp if not i in stop_words]
+        #tmp = [i for i in tmp if not i in freq]
         #print(tmp)
 
         # 7. stem words
@@ -86,19 +127,6 @@ for name, group in df.groupby('binned'):
     #print(processed_text[:200])
 
     ################## Yao et al. wants co-occurrence matrix and PPMI
-    tok2indx = dict()
-    unigram_counts = Counter()
-    for ii, abstract in enumerate(processed_text):
-        if ii % 200000 == 0:
-            print(f'finished {ii/len(processed_text):.2%} of headlines')
-        for token in abstract:
-            unigram_counts[token] += 1
-            if token not in tok2indx:
-                tok2indx[token] = len(tok2indx)
-    indx2tok = {indx:tok for tok,indx in tok2indx.items()}
-    print('done')
-    print('vocabulary size: {}'.format(len(unigram_counts)))
-    print('most common: {}'.format(unigram_counts.most_common(10)))
 
     window = 5
     skipgram_counts = Counter()
@@ -142,10 +170,10 @@ for name, group in df.groupby('binned'):
     row_indxs = []
     col_indxs = []
 
-    pmi_dat_values = []
+    #pmi_dat_values = []
     ppmi_dat_values = []
-    spmi_dat_values = []
-    sppmi_dat_values = []
+    #spmi_dat_values = []
+    #sppmi_dat_values = []
 
     # smoothing
     alpha = 0.75
@@ -169,26 +197,28 @@ for name, group in df.groupby('binned'):
         nc = sum_over_words[tok2_indx]
         Pc = nc / num_skipgrams
     
-        nca = sum_over_words_alpha[tok2_indx]
-        Pca = nca / nca_denom
+        #nca = sum_over_words_alpha[tok2_indx]
+        #Pca = nca / nca_denom
     
         pmi = np.log2(Pwc/(Pw*Pc))
         ppmi = max(pmi, 0)
     
-        spmi = np.log2(Pwc/(Pw*Pca))
-        sppmi = max(spmi, 0)
+        #spmi = np.log2(Pwc/(Pw*Pca))
+        #sppmi = max(spmi, 0)
     
         row_indxs.append(tok1_indx)
         col_indxs.append(tok2_indx)
-        pmi_dat_values.append(pmi)
+        #pmi_dat_values.append(pmi)
         ppmi_dat_values.append(ppmi)
-        spmi_dat_values.append(spmi)
-        sppmi_dat_values.append(sppmi)
+        #spmi_dat_values.append(spmi)
+        #sppmi_dat_values.append(sppmi)
         
-    pmi_mat = sparse.csr_matrix((pmi_dat_values, (row_indxs, col_indxs)))
+    #pmi_mat = sparse.csr_matrix((pmi_dat_values, (row_indxs, col_indxs)))
     ppmi_mat = sparse.csr_matrix((ppmi_dat_values, (row_indxs, col_indxs)))
-    spmi_mat = sparse.csr_matrix((spmi_dat_values, (row_indxs, col_indxs)))
-    sppmi_mat = sparse.csr_matrix((sppmi_dat_values, (row_indxs, col_indxs)))
+    #spmi_mat = sparse.csr_matrix((spmi_dat_values, (row_indxs, col_indxs)))
+    #sppmi_mat = sparse.csr_matrix((sppmi_dat_values, (row_indxs, col_indxs)))
+
+    print(ppmi_mat.shape)
 
     sparse.save_npz("data/mcc_{0}_{1}_ppmi.npz".format(name.left, name.right), ppmi_mat)
     #print(ppmi_mat[:10])
@@ -199,3 +229,4 @@ for name, group in df.groupby('binned'):
 
     with open("data/mcc_{0}_{1}.list".format(name.left, name.right), "wb") as f:
         pickle.dump(processed_text, f)
+
