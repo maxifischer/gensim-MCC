@@ -7,12 +7,12 @@ import os
 
 logging.basicConfig(filename="./logs/log1", format="%(levelname)s - %(asctime)s: %(message)s", datefmt= '%H:%M:%S', level=logging.INFO)
 
-#dataset = api.load("text8")
-#t = time()
-#basic_model = Word2Vec(dataset, size=200, window=5, min_count=1, workers=4)
-#print('Time to train: {} mins'.format(round((time() - t) / 60,
-#                                                          2)))
-#basic_model.save('runs/word2vec_further_{}.model'.format("base"))
+dataset = api.load("text8")
+t = time()
+basic_model = Word2Vec(dataset, size=200, window=5, min_count=1, workers=4)
+print('Time to train: {} mins'.format(round((time() - t) / 60,
+                                                          2)))
+basic_model.save('runs/word2vec_further_{}.model'.format("base"))
 
 
 #prefixed = [filename for filename in os.listdir('./data/') if filename.startswith("mcc_")]
@@ -43,13 +43,21 @@ for time_bin in prefixed:
     #model = basic_model
 
     ########### EMB chronologically trained (EMB-C)
+    #t = time()
+    #if time_bin == "mcc_1985_2009.list":
+    #    model = Word2Vec(text, size=200, window=5, min_count=1, workers=4)
+    #else:
+    #    model.train(text, total_examples=len(text), epochs=model.epochs)
+    #print('Time to train: {} mins'.format(round((time() - t) / 60, 2)))
+    #model.save('runs/emb_c_{}.model'.format(time_bin))
+
+    ########### EMB chronologically trained (EMB-C)
     t = time()
-    if time_bin == "mcc_1985_2009.list":
-        model = Word2Vec(text, size=200, window=5, min_count=1, workers=4)
-    else:
-        model.train(text, total_examples=len(text), epochs=model.epochs)
+    basic_model.train(text, total_examples=len(text), epochs=basic_model.epochs)
     print('Time to train: {} mins'.format(round((time() - t) / 60, 2)))
-    model.save('runs/emb_c_{}.model'.format(time_bin))
+    basic_model.save('runs/emb_c_{}_further.model'.format(time_bin))
+    
+    model=basic_model
 
     ########### Evaluation
     #print("Vocabulary size: {0}".format(len(model.wv.vocab)))
