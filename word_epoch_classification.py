@@ -159,17 +159,20 @@ vocab_size = len(vocab)+1
 print(vocab_size)
 max_length = max([len(w) for w in vocab])
 
-emb_matrix = KeyedVectors.load_word2vec_format("classify_runs/emb_b_mcc_2016_2019.list.bin").syn0
-print(emb_matrix.shape)
-print(emb_matrix[:5])
+model_name = "emb_c_1"
+emb_matrix = KeyedVectors.load_word2vec_format("classify_runs/emb_c_mcc_2016_2019.list.bin")#.syn0
+print(emb_matrix.syn0.shape)
+#print(emb_matrix.syn0[:5])
 embedding_dim = 200
 
 # create a weight matrix for words in training docs
 embedding_matrix = np.zeros((vocab_size, embedding_dim))
 for i, word in enumerate(vocab):
-    embedding_vector = emb_matrix[i]
-    if embedding_vector is not None:
+    try:
+        embedding_vector = emb_matrix.get_vector(word)
         embedding_matrix[i] = embedding_vector
+    except:
+        continue
 #embedding_matrix = emb_matrix
 
 ########## Classification model definition
@@ -217,7 +220,7 @@ def save_history(history):
     plt.ylabel('Accuracy')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Test'], loc='upper left')
-    plt.savefig("results/classify_acc.png")
+    plt.savefig("results/classify_acc_{0}.png".format(model_name))
 
     # Plot training & validation loss values
     plt.plot(history.history['loss'])
@@ -226,16 +229,19 @@ def save_history(history):
     plt.ylabel('Loss')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Test'], loc='upper left')
-    plt.savefig("results/classify_loss.png")
+    plt.savefig("results/classify_loss_{0}.png".format(model_name))
 
 ############## Train classification task
 history = model.fit(X_train, y_train,
-                    epochs=10,
+                    epochs=50,
                     verbose=2,
                     validation_data=(X_test, y_test),
-                    batch_size=300)
+                    batch_size=128)
 loss, accuracy = model.evaluate(X_train, y_train, verbose=False)
 print("Training Accuracy: {:.4f}".format(accuracy))
 loss, accuracy = model.evaluate(X_test, y_test, verbose=False)
 print("Testing Accuracy:  {:.4f}".format(accuracy))
+y_pred = model.predict(X_test)
+print(y_pred[:5])
+pickle.dump(y_pred, open("data/y_pred_{0}.npy".format(model_name), "wb"))
 save_history(history)
