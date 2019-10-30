@@ -43,8 +43,8 @@ more_prepr = [i for i in freq if not i in stop_words]
 tok2indx = dict()
 unigram_counts = Counter()
 for ii, abstract in enumerate([more_prepr]):
-    if ii % 200000 == 0:
-        print(f'finished {ii/len(more_prepr):.2%} of abstracts')
+    #if ii % 200000 == 0:
+    #    print(f'finished {ii/len(more_prepr):.2%} of abstracts')
     for token in abstract:
         unigram_counts[token] += 1
         if token not in tok2indx:
@@ -70,8 +70,9 @@ for name, group in df.groupby('binned'):
     print("Training on Bucket {0}-{1}...".format(name.left, name.right))
     print(group.shape)
 
+    #text = df['content'].tolist()
     text = group['content'].tolist()
-    #print(text[:2])
+    print(text[:2])
 
     processed_text = []
     for abstract in tqdm(text):
@@ -126,8 +127,13 @@ for name, group in df.groupby('binned'):
     print(num_tokens/len(processed_text))
     #print(processed_text[:200])
 
-    ################## Yao et al. wants co-occurrence matrix and PPMI
+    #with open("data/mcc_{0}_{1}.list".format(name.left, name.right), "wb") as f:
+    #with open("data/mcc_{0}.list".format("all_small"), "wb") as f:
+    with open("data/mcc_small_{0}_{1}.list".format(name.left, name.right), "wb") as f:
+        pickle.dump(processed_text, f)
 
+    ################## Yao et al. wants co-occurrence matrix and PPMI
+    
     window = 5
     skipgram_counts = Counter()
     for iabstract, abstract in enumerate(processed_text):
@@ -139,8 +145,7 @@ for name, group in df.groupby('binned'):
                 skipgram = (abstract[ifw], abstract[icw])
                 skipgram_counts[skipgram] += 1    
         if iabstract % 20000 == 0:
-            print(f'finished {iabstract/len(processed_text):.2%} of abstract')
-        
+            print(f'finished {iabstract/len(processed_text):.2%} of abstract')    
     print('done')
     print('number of skipgrams: {}'.format(len(skipgram_counts)))
     print('most common: {}'.format(skipgram_counts.most_common(10)))
@@ -161,6 +166,7 @@ for name, group in df.groupby('binned'):
         dat_values.append(sg_count)
     
     wwcnt_mat = sparse.csr_matrix((dat_values, (row_indxs, col_indxs)))
+    print(wwcnt_mat.shape)
     print('done')
 
     num_skipgrams = wwcnt_mat.sum()
@@ -221,12 +227,7 @@ for name, group in df.groupby('binned'):
     print(ppmi_mat.shape)
 
     sparse.save_npz("data/mcc_{0}_{1}_ppmi.npz".format(name.left, name.right), ppmi_mat)
+    #sparse.save_npz("data/mcc_{0}_ppmi.npz".format("all"), ppmi_mat)
     #print(ppmi_mat[:10])
 
-    print('done')
-    #with open("data/mcc_{0}_{1}_ppmi.list".format(name.left, name.right), "wb") as f:
-    #    pickle.dump(df_ppmi, f)
-
-    with open("data/mcc_{0}_{1}.list".format(name.left, name.right), "wb") as f:
-        pickle.dump(processed_text, f)
-
+    print('done') 
