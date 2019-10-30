@@ -15,12 +15,12 @@ import pickle as pickle
 
 # PARAMETERS
 
-nw = 10392 # number of words in vocab (11068100/20936 for ngram/nyt)
+nw = 20873 # number of words in vocab (11068100/20936 for ngram/nyt)
 T = [1985, 2010, 2014, 2017] # total number of time points (20/range(27) for ngram/nyt)
 cuda = False
 
 trainhead = 'data/mcc_ppmi_' # location of training data
-savehead = 'runs/'
+savehead = 'dia_correctness_runs/'
     
 def print_params(r,lam,tau,gam,emph,ITERS):
     
@@ -37,7 +37,7 @@ if __name__=='__main__':
     lam = 10 #frob regularizer
     gam = 100 # forcing regularizer
     tau = 50  # smoothing regularizer
-    r   = 50  # rank
+    r   = 200  # rank
     b = nw # batch size
     emph = 1 # emphasize the nonzero
 
