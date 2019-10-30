@@ -159,8 +159,8 @@ vocab_size = len(vocab)+1
 print(vocab_size)
 max_length = max([len(w) for w in vocab])
 
-model_name = "emb_c_1"
-emb_matrix = KeyedVectors.load_word2vec_format("classify_runs/emb_c_mcc_2016_2019.list.bin")#.syn0
+model_name = "emb_d_1"
+emb_matrix = KeyedVectors.load_word2vec_format("dia_correctness_runs/dynamic_word2vec_3.bin")#.syn0
 print(emb_matrix.syn0.shape)
 #print(emb_matrix.syn0[:5])
 embedding_dim = 200
@@ -243,5 +243,5 @@ loss, accuracy = model.evaluate(X_test, y_test, verbose=False)
 print("Testing Accuracy:  {:.4f}".format(accuracy))
 y_pred = model.predict(X_test)
 print(y_pred[:5])
-pickle.dump(y_pred, open("data/y_pred_{0}.npy".format(model_name), "wb"))
+pickle.dump(y_pred, open("results/y_pred_{0}.npy".format(model_name), "wb"))
 save_history(history)
