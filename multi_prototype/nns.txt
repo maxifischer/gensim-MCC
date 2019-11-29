@@ -1,0 +1,569 @@
+20873
+Evaluating word plant
+['plants', 'vegetative', 'amf', 'crop', 'fungal']
+Evaluating word desert
+['steppe', 'oasis', 'highaltitude', 'oases', 'alpine']
+Evaluating word close
+['closer', 'closest', 'distant', 'vicinity', 'strong']
+Evaluating word spruce
+['picea', 'pine', 'beech', 'abies', 'birch']
+Evaluating word branch
+['branches', 'pole', 'trunk', 'culm', 'cuttings']
+Evaluating word branches
+['stems', 'shoots', 'stumps', 'cuttings', 'crowns']
+Evaluating word action
+['actions', 'dialogue', 'mobilisation', 'advocacy', 'engagement']
+Evaluating word war
+['wars', 'postwar', 'terrorism', 'aftermath', 'peace']
+Evaluating word poor
+['inadequate', 'poorer', 'unsatisfactory', 'poorest', 'unreliable']
+Evaluating word education
+['educational', 'curricula', 'literacy', 'educators', 'curriculum']
+Evaluating word water
+['groundwater', 'freshwater', 'surfacewater', 'irrigation', 'rainwater']
+Evaluating word energy
+['electricity', 'renewables', 'energies', 'power', 'energetic']
+Evaluating word renewable
+['renewables', 'nonfossil', 'res', 'carbonfree', 'geothermal']
+Evaluating word sustainable
+['sustainability', 'sound', 'lowcarbon', 'efficient', 'rational']
+Evaluating word sustainability
+['sustainable', 'resilience', 'ecoefficiency', 'competitiveness', 'credibility']
+Evaluating word community
+['communities', 'communitys', 'civic', 'church', 'communitybased']
+Evaluating word communities
+['community', 'populations', 'australians', 'livelihoods', 'villagers']
+Evaluating word consumption
+['consumptions', 'usage', 'demand', 'expenditure', 'imports']
+Evaluating word consume
+['consumed', 'consumes', 'consuming', 'wasted', 'spend']
+Evaluating word peace
+['peacebuilding', 'democracy', 'peaceful', 'democratic', 'reconciliation']
+Evaluating word life
+['virtuous', 'lives', 'vicious', 'lifecycle', 'brayton']
+Evaluating word land
+['farmland', 'lands', 'cropland', 'landuse', 'forestland']
+Evaluating word justice
+['injustice', 'activism', 'democracy', 'equity', 'injustices']
+Evaluating word partnership
+['partnerships', 'alliance', 'collaboration', 'coalition', 'collaborations']
+Evaluating word partnerships
+['collaborations', 'partnership', 'collaboration', 'alliances', 'coalitions']
+Evaluating word global
+['international', 'worldwide', 'globally', 'regional', 'globalization']
+Evaluating word watch
+['cameras', 'monitors', 'cards', 'camera', 'handheld']
+Evaluating word duck
+['ducks', 'buffalo', 'indicus', 'penaeus', 'goose']
+Evaluating word cellular
+['intracellular', 'secretory', 'neuronal', 'modulating', 'extracellular']
+Evaluating word draw
+['drawn', 'drew', 'draws', 'drawing', 'illuminate']
+Evaluating word bank
+['banks', 'fund', 'lending', 'georges', 'cafe_0']
+Evaluating word mail
+['postal', 'mailed', 'selfadministered', 'questionnairebased', 'email']
+Evaluating word distribution
+['distributions', 'nonspatial', 'temporal', 'variation', 'variations']
+Evaluating word depression
+['depressive', 'anxiety', 'disorder', 'mood', 'ptsd']
+Evaluating word version
+['excel', 'versions', 'microsoft', 'ibm', 'matlab']
+Evaluating word plane
+['planes', 'junction', 'perpendicular', 'concentric', 'conical']
+Evaluating word phone
+['phones', 'apps', 'smartphone', 'smartphones', 'messaging']
+Evaluating word wave
+['waves', 'tidal', 'wec', 'wind', 'hydrokinetic']
+Evaluating word cycle
+['lifecycle', 'cycles', 'cradletograve', 'span', 'cradletogate']
+Evaluating word rise
+['rises', 'rising', 'surge', 'decline', 'escalating']
+Evaluating word rising
+['escalating', 'increasing', 'rises', 'declining', 'everincreasing']
+Evaluating word level
+['levels', 'degree', 'scores', 'scale', 'incomes']
+Evaluating word drop
+['drops', 'decrease', 'decreases', 'increases', 'rises']
+Evaluating word rehabilitation
+['restoration', 'reconstruction', 'reclamation', 'aftercare', 'preventive']
+Evaluating word instrument
+['tool', 'instruments', 'tools', 'methodology', 'framework']
+Evaluating word instrumentation
+['photogrammetry', 'radar', 'postprocessing', 'metrology', 'robotics']
+Evaluating word operation
+['operating', 'operational', 'installation', 'shutdown', 'startup']
+Evaluating word operations
+['operation', 'enterprise', 'activities', 'industries', 'equipment']
+Evaluating word remote
+['offgrid', 'remotely', 'mountainous', 'rural', 'underserved']
+Evaluating word relation
+['respect', 'relating', 'regards', 'relate', 'relationship']
+Evaluating word relations
+['relationships', 'embeddedness', 'interdependence', 'struggles', 'interrelations']
+Evaluating word study
+['investigation', 'paper', 'work', 'manuscript', 'article']
+Evaluating word area
+['areas', 'region', 'parcels', 'km', 'zones']
+20873
+Evaluating word plant_0
+['plants', 'vegetative', 'tree', 'crop', 'amf']
+Evaluating word plant_1
+['facility_1', 'installations', 'facility_0', 'plants', 'nuclear_0']
+Evaluating word desert_0
+['steppe', 'oasis', 'deserts', 'oases_0', 'arid']
+Evaluating word desert_1
+['prosopis', 'agave_0', 'artemisia', 'benth', 'orchid_0']
+Evaluating word close_0
+['closer_1', 'closest_1', 'close_1', 'distant', 'vicinity_0']
+Evaluating word close_1
+['kc_0', 'ic_0', 'lm_0', 'db_0', 'epsilon_0']
+Evaluating word close_2
+['weaken_1', 'deeper_2', 'affects_0', 'strengthening_2', 'pipi']
+Evaluating word spruce_0
+['picea', 'pine', 'beech', 'abies', 'birch']
+Evaluating word spruce_1
+['canonical_2', 'agrees_1', 'tried_0', 'leishmaniasis_1', 'legitimation_1']
+Evaluating word branch_0
+['trunk_0', 'branches_0', 'buds', 'stump_0', 'stem_0']
+Evaluating word branch_1
+['cable_0', 'node', 'radial', 'topology', 'twolevel_0']
+Evaluating word branch_2
+['functionalization_1', 'fascinating_0', 'fore_2', 'allelopathy_1', 'archaeological_2']
+Evaluating word branches_0
+['stems_0', 'stumps_0', 'pruned_0', 'stump_0', 'trunk_0']
+Evaluating word branches_1
+['domains_2', 'subsectors_0', 'departments_1', 'sectors_0', 'pieces_1']
+Evaluating word branches_2
+['rings', 'ends_2', 'stacking_1', 'planes_0', 'star_1']
+Evaluating word action_1
+['actions', 'deliberate_0', 'advocacy_0', 'agenda', 'dialogue']
+Evaluating word action_0
+['involvement_1', 'interference', 'detoxification_0', 'inhibition_0', 'attack_0']
+Evaluating word action_2
+['accase', 'pyrethroid', 'broadspectrum_0', 'prophylactic', 'newer_2']
+Evaluating word war_0
+['wars_0', 'aftermath', 'postwar', 'vietnam_1', 'colonial_0']
+Evaluating word war_2
+['nsgaii', 'headed_1', 'hdpe', 'highvolume_0', 'aa_1']
+Evaluating word war_1
+['cup_2', 'war_0', 'bank_2', 'mountains_1', 'paul_0']
+Evaluating word poor
+['inadequate', 'poorer', 'poorest', 'worse_0', 'insufficient']
+Evaluating word education
+['educational', 'literacy', 'curricula', 'curriculum', 'educators']
+Evaluating word water
+['groundwater', 'freshwater', 'irrigation', 'surfacewater', 'rainwater']
+Evaluating word energy
+['electricity', 'energies_1', 'renewables', 'power', 'res_1']
+Evaluating word renewable
+['renewables', 'res_1', 'nonfossil', 'carbonfree', 'clean']
+Evaluating word sustainable
+['sustainability', 'sound_0', 'viable_0', 'lowcarbon', 'efficient']
+Evaluating word sustainability
+['sustainable', 'resilience', 'ecoefficiency', 'competitiveness', 'environmental']
+Evaluating word community
+['communities', 'communitys_0', 'citizen', 'church_0', 'communitybased']
+Evaluating word communities
+['community', 'villagers', 'populations', 'tribes', 'livelihoods']
+Evaluating word consumption_0
+['consumptions', 'usage', 'demand', 'expenditure', 'saving']
+Evaluating word consumption_1
+['excretion_0', 'ingestion_0', 'postprandial', 'intake', 'lactate']
+Evaluating word consume_0
+['consumed', 'consumes', 'consuming', 'wasted', 'spend']
+Evaluating word consume_1
+['consume_0', 'consumed', 'marketed_0', 'beverages', 'sourced_1']
+Evaluating word peace_0
+['peacebuilding', 'democratic', 'peaceful', 'reconciliation', 'democracy_0']
+Evaluating word peace_1
+['politically_1', 'cbs_0', 'turned_0', 'constrained_0', 'resonance_1']
+Evaluating word peace_2
+['coexist_1', 'newest_1', 'han_1', 'plus_3', 'cease_3']
+Evaluating word life
+['virtuous_1', 'lives_2', 'lifecycle_0', 'vicious_1', 'lives_0']
+Evaluating word land
+['farmland', 'cropland', 'lands', 'landuse', 'forestland_0']
+Evaluating word justice_0
+['activism_0', 'injustice_0', 'solidarity', 'citizenship', 'democracy_0']
+Evaluating word justice_1
+['su_0', 'especies', 'conservacion', 'cadre_1', 'legitimation_1']
+Evaluating word partnership_0
+['partnerships', 'alliance_0', 'partners_1', 'initiative_0', 'collaboration_0']
+Evaluating word partnership_1
+['wood_1', 'collaboration_1', 'wholesalers', 'manufactures_3', 'subsidiaries_0']
+Evaluating word partnerships
+['collaborations_0', 'partnership_0', 'collaboration_0', 'alliances', 'partners_1']
+Evaluating word global_0
+['international_0', 'worldwide_0', 'globally', 'regional', 'worlds']
+Evaluating word global_1
+['ensemble_0', 'gcm_1', 'revised_1', 'covariance', 'satellitebased']
+Evaluating word watch_0
+['hosted_1', 'msc_0', 'fao_0', 'extracted_1', 'watch_2']
+Evaluating word watch_1
+['equipped_0', 'mounted_0', 'powering_0', 'capacitor', 'capacitors']
+Evaluating word watch_3
+['dme_1', 'descending_0', 'pendant_2', 'bps_2', 'psa_3']
+Evaluating word watch_2
+['categorizing_0', 'pack_0', 'responsibly_5', 'fins_2', 'hereafter_3']
+Evaluating word duck_0
+['ducks', 'prawns', 'indicus', 'buffalo', 'penaeus']
+Evaluating word duck_1
+['leishmaniasis_1', 'hcw_1', 'willow_1', 'tv_6', 'triaxial_1']
+Evaluating word duck_2
+['pack_0', 'sociology_1', 'manila_1', 'dominantly_3', 'allee_2']
+Evaluating word cellular_0
+['cellular_1', 'intracellular', 'neuronal', 'modulating', 'secretion_0']
+Evaluating word cellular_2
+['automata', 'wireless', 'multiagent', 'virtualization', 'neural']
+Evaluating word cellular_1
+['modulating', 'cellular_0', 'synaptic_0', 'signalling', 'signaling']
+Evaluating word draw_1
+['drawn_1', 'drew_1', 'draws_0', 'drawing_0', 'elaborate_0']
+Evaluating word draw_3
+['nacl', 'fo', 'diluted_0', 'pro_0', 'naso']
+Evaluating word draw_2
+['attract_2', 'attracting_2', 'directs_1', 'deserve_1', 'garnered_1']
+Evaluating word draw_0
+['robert_1', 'grades_0', 'compares_0', 'popular_0', 'notions_1']
+Evaluating word bank_0
+['banks_0', 'bank_2', 'bank_1', 'georges_0', 'imf_1']
+Evaluating word bank_1
+['bank_0', 'banks_1', 'bank_2', 'banks_0', 'channel_0']
+Evaluating word bank_2
+['cup_2', 'bank_0', 'fund', 'banks_0', 'war_1']
+Evaluating word mail_0
+['postal', 'mailed', 'questionnairebased', 'sent_0', 'selfadministered']
+Evaluating word mail_1
+['telephone_0', 'mail_0', 'email_0', 'mailed', 'facetoface_0']
+Evaluating word distribution_0
+['distributions_0', 'distributions_1', 'temporal', 'variation', 'patterning_0']
+Evaluating word distribution_1
+['autonomous_0', 'differentiation_1', 'peertopeer', 'seamless_0', 'provision_1']
+Evaluating word distribution_2
+['angstrom_0', 'kb_0', 'spherical_0', 'rodlike', 'hexagonal']
+Evaluating word depression_0
+['depressive', 'anxiety', 'symptom', 'pain', 'illness_0']
+Evaluating word depression_1
+['cones_0', 'drawdown', 'uplift_0', 'mmyr', 'landslides_0']
+Evaluating word version_0
+['excel', 'matlab_0', 'named_2', 'microsoft_0', 'spss']
+Evaluating word version_1
+['proposal_1', 'version_0', 'dimension_1', 'versions_1', 'criterion_1']
+Evaluating word plane_0
+['planes_0', 'junction_0', 'planar', 'angular', 'perpendicular']
+Evaluating word plane_1
+['plane_0', 'lifting_0', 'angular', 'hull_0', 'cavity_0']
+Evaluating word phone
+['phones', 'app_1', 'smartphone_0', 'apps_0', 'smartphones']
+Evaluating word wave
+['waves', 'tidal', 'wec_0', 'wind', 'winds']
+Evaluating word cycle
+['lifecycle_0', 'cycles', 'shelf_0', 'cradletograve_0', 'style_1']
+Evaluating word rise
+['rises', 'rising_0', 'decline_0', 'escalation_0', 'surge']
+Evaluating word rising_0
+['escalating_0', 'increasing', 'rises', 'everincreasing', 'declining']
+Evaluating word rising_1
+['rising_0', 'rises', 'increasing', 'lowering_0', 'lowering_1']
+Evaluating word level
+['levels', 'degree_0', 'scale_0', 'scores_1', 'scores_0']
+Evaluating word drop
+['drops_0', 'decrease', 'augmentation_1', 'increases_0', 'decreases']
+Evaluating word rehabilitation
+['restoration_0', 'reconstruction_1', 'revegetation', 'reclamation_0', 'preventive_0']
+Evaluating word instrument_0
+['instruments_0', 'instrument_1', 'tool', 'framework_1', 'lever_1']
+Evaluating word instrument_3
+['instruments_1', 'statistic', 'insitu_2', 'gpr_0', 'tape_1']
+Evaluating word instrument_1
+['instrument_0', 'tool', 'instruments_0', 'strategy', 'device_1']
+Evaluating word instrument_2
+['reminders', 'checklists_0', 'routinely_1', 'anonymous_0', 'module_1']
+Evaluating word instrumentation_0
+['photogrammetry_1', 'fluorescence_1', 'handheld', 'automated', 'cameras_0']
+Evaluating word instrumentation_2
+['httpdxdoiorg', 'physics_0', 'environ_0', 'vacuum_3', 'doi_0']
+Evaluating word instrumentation_1
+['unilateral_0', 'ao_1', 'underwent_0', 'aortic', 'mri']
+Evaluating word instrumentation_3
+['resolve_4', 'biobanking_2', 'inter_2', 'wrong_2', 'pseudo_1']
+Evaluating word operation
+['operating', 'operational', 'shutdown_0', 'installation_0', 'decommissioning_0']
+Evaluating word operations_0
+['operation', 'activities_0', 'equipment', 'operational', 'enterprise_0']
+Evaluating word operations_1
+['cooperative_3', 'date_1', 'factories_1', 'since_1', 'subsidiary_3']
+Evaluating word remote_0
+['remote_1', 'remotely', 'offgrid', 'rural', 'mountainous']
+Evaluating word remote_1
+['sensing_1', 'remote_0', 'photogrammetry_0', 'instrumentation_2', 'geoinformation']
+Evaluating word relation_0
+['relate_1', 'relating_0', 'respect_1', 'regards_1', 'related_0']
+Evaluating word relation_1
+['equals', 'correlation_0', 'elasticity_0', 'minus_0', 'multiplying_0']
+Evaluating word relations_0
+['connections_0', 'struggles_0', 'ties_0', 'interdependence_0', 'linkages_0']
+Evaluating word relations_1
+['expressions_0', 'principle_1', 'mechanics_0', 'diagram_0', 'geometric']
+Evaluating word relations_2
+['sexes', 'correlation_1', 'correlations', 'segregation_1', 'allocation_1']
+Evaluating word study
+['investigation', 'paper_0', 'work', 'analysis', 'article_0']
+Evaluating word area
+['areas', 'region_0', 'zones_0', 'km', 'tracts']
+20873
+Evaluating word plant_0
+['plants', 'vegetative', 'crop', 'tree', 'amf']
+Evaluating word plant_1
+['installations', 'plants', 'facility_2', 'plant_0', 'technology_1']
+Evaluating word desert_0
+['steppe', 'oasis', 'highaltitude_0', 'hilly_0', 'alpine']
+Evaluating word desert_1
+['propagated_0', 'ubiquity_2', 'benth', 'sage_3', 'vera_0']
+Evaluating word close_0
+['closer_3', 'distant', 'closer_2', 'exceeded_0', 'vicinity_0']
+Evaluating word close_1
+['contrast_0', 'chi_4', 'rl_2', 'od_0', 'hl_0']
+Evaluating word close_2
+['tends_2', 'weaken_1', 'weaker_0', 'displacement_0', 'disrupted_4']
+Evaluating word spruce_0
+['picea', 'pine', 'fir', 'birch', 'beech']
+Evaluating word spruce_1
+['carpet_1', 'meso_1', 'reinforcements_3', 'sus_0', 'orangutan_2']
+Evaluating word branch_3
+['trunk_0', 'stem_0', 'branches_0', 'stems_0', 'stump_0']
+Evaluating word branch_1
+['discipline_0', 'thriving_2', 'japanese_1', 'russian_0', 'founded_0']
+Evaluating word branch_4
+['approximation_0', 'convex_0', 'iteration_0', 'feedforward_0', 'topology_0']
+Evaluating word branch_0
+['situated_0', 'virginia_0', 'line_3', 'rift_0', 'tennessee_0']
+Evaluating word branch_5
+['asymmetric_2', 'virtue_1', 'brings_0', 'truncated_0', 'intramolecular']
+Evaluating word branch_2
+['opposing_2', 'returning_5', 'collectively_4', 'staggered_0', 'overlaid_1']
+Evaluating word branches_0
+['stems_0', 'stumps_0', 'pruned_0', 'trunk_0', 'branch_3']
+Evaluating word branches_1
+['domains_3', 'facets_0', 'clusters_2', 'pieces_4', 'disciplines']
+Evaluating word branches_3
+['ends_2', 'rings', 'shapes_0', 'planes_0', 'nuclei_0']
+Evaluating word branches_2
+['logs_0', 'chips_0', 'shredded_0', 'branches_0', 'extracting_2']
+Evaluating word action_1
+['actions', 'dialogue', 'leadership_0', 'advocacy_0', 'initiatives_0']
+Evaluating word action_0
+['involvement_1', 'inhibition_1', 'detoxification_0', 'attack_0', 'inactivation_0']
+Evaluating word action_2
+['transmission_3', 'prophylactic', 'newer_2', 'broadspectrum_0', 'apply_2']
+Evaluating word war_0
+['wars_0', 'wake_1', 'aftermath_0', 'postwar', 'collapse_1']
+Evaluating word war_2
+['screws_0', 'rolled_0', 'reformulated_2', 'os_3', 'rolling_0']
+Evaluating word war_1
+['war_0', 'bank_3', 'cup_3', 'summit_0', 'paul_1']
+Evaluating word poor
+['inadequate', 'poorer', 'poorest', 'worse_0', 'unreliable_0']
+Evaluating word education
+['educational', 'curricula', 'literacy', 'curriculum', 'teaching_0']
+Evaluating word water
+['groundwater', 'freshwater', 'irrigation', 'surfacewater', 'rainwater']
+Evaluating word energy_0
+['electricity', 'energies_1', 'energy_1', 'renewables', 'power']
+Evaluating word energy_1
+['energy_0', 'energies_1', 'electricity', 'renewables', 'energybased_1']
+Evaluating word renewable
+['renewables', 'res_1', 'nonfossil', 'carbonfree_0', 'clean_0']
+Evaluating word sustainable
+['sustainability', 'sound_0', 'viable_0', 'lowcarbon', 'efficient']
+Evaluating word sustainability
+['sustainable', 'resilience', 'ecoefficiency', 'viability_1', 'environmental']
+Evaluating word community
+['communities', 'communitys_0', 'communitybased', 'families_0', 'church_0']
+Evaluating word communities
+['community', 'populations', 'families_0', 'villagers_0', 'villages']
+Evaluating word consumption_0
+['consumptions', 'usage', 'demand', 'expenditure', 'embodied']
+Evaluating word consumption_1
+['restriction_0', 'excretion_0', 'intake', 'postprandial_0', 'ingestion_0']
+Evaluating word consume_0
+['consumes', 'consumed', 'wasted', 'consuming', 'spend']
+Evaluating word consume_1
+['eat_0', 'eaten_0', 'ingested', 'appreciated_3', 'ecolabeled']
+Evaluating word consume_2
+['manufactured_2', 'marketed_0', 'consume_0', 'imported_1', 'consumed']
+Evaluating word peace_0
+['peacebuilding_0', 'reconciliation', 'democracy_0', 'peaceful_0', 'enduring_0']
+Evaluating word peace_2
+['politically_1', 'stagnant_0', 'nairobi_2', 'longtime_0', 'nio_2']
+Evaluating word peace_3
+['mantle_1', 'assume_0', 'crossroads_2', 'badly_2', 'mil_2']
+Evaluating word peace_1
+['gadus_1', 'va_2', 'introducing_0', 'gentrification_2', 'sus_0']
+Evaluating word life
+['virtuous_1', 'vicious_1', 'lives_2', 'lives_0', 'lifecycle_0']
+Evaluating word land
+['farmland', 'cropland', 'landuse', 'lands', 'forestland_0']
+Evaluating word justice_0
+['democracy_0', 'activism_0', 'citizenship', 'injustices_0', 'injustice_0']
+Evaluating word justice_1
+['meso_1', 'psa_4', 'orangutan_2', 'bps_3', 'locales_0']
+Evaluating word partnership_0
+['partnerships', 'alliance_0', 'partners_1', 'initiative_0', 'coalition']
+Evaluating word partnership_1
+['bilateral_0', 'allies_0', 'southsouth', 'restructured_1', 'pan_4']
+Evaluating word partnership_2
+['collaboration_1', 'gmbh_4', 'preliminarily_0', 'specially_1', 'kiln_3']
+Evaluating word partnerships
+['collaborations_0', 'partnership_0', 'collaboration_0', 'alliances', 'partners_1']
+Evaluating word global_0
+['globally_0', 'international_0', 'worldwide_0', 'regional', 'climate']
+Evaluating word global_1
+['ensemble_0', 'gcm_1', 'covariance', 'pixel', 'diffuse_1']
+Evaluating word watch_0
+['fao_0', 'aquarium_0', 'triangle_0', 'fao_1', 'convention_1']
+Evaluating word watch_1
+['equipped_0', 'mounted_0', 'interfacing_0', 'powering_0', 'nanogenerator']
+Evaluating word watch_3
+['stemming_0', 'descending_0', 'passes_3', 'bps_3', 'fins_1']
+Evaluating word watch_2
+['canadians_3', 'wildcaught_1', 'morhua_1', 'flaws_3', 'saf_1']
+Evaluating word duck_0
+['ducks', 'buffalo', 'penaeus', 'cultured_1', 'freeranging_0']
+Evaluating word duck_1
+['greens_1', 'dmf_1', 'cricket_2', 'drink_2', 'willow_1']
+Evaluating word duck_2
+['qd_3', 'gadus_1', 'curved_2', 'morhua_1', 'rev_2']
+Evaluating word cellular_0
+['intracellular', 'modulating', 'chloroplasts', 'neuronal', 'extracellular_0']
+Evaluating word cellular_2
+['automata', 'multiagent_0', 'virtualization', 'cyberphysical', 'wireless']
+Evaluating word cellular_1
+['modulating', 'signaling_0', 'transcriptional', 'neuronal', 'synaptic_0']
+Evaluating word draw_1
+['drawn_1', 'drawing_1', 'draws_0', 'drew_1', 'illuminate_1']
+Evaluating word draw_4
+['fo_0', 'pro_0', 'diluted_0', 'nacl', 'solutes']
+Evaluating word draw_2
+['drawn_2', 'generalize_1', 'extrapolate_1', 'arrive_0', 'corroborate_1']
+Evaluating word draw_3
+['attracting_2', 'devote_1', 'deserve_1', 'devote_0', 'directs_1']
+Evaluating word draw_0
+['polylactide', 'polyester_0', 'polyurethane', 'polybutylene', 'thermoset_0']
+Evaluating word bank_0
+['georges_0', 'burial_0', 'ephemeral_0', 'floodplain_0', 'depressions']
+Evaluating word bank_1
+['bank_3', 'banks_0', 'cup_3', 'imf_1', 'bank_2']
+Evaluating word bank_2
+['bank_1', 'banks_1', 'bank_3', 'cafe_2', 'anywhere_2']
+Evaluating word bank_3
+['bank_1', 'cup_3', 'war_1', 'summit_0', 'congress_0']
+Evaluating word mail_0
+['postal_0', 'mailed', 'selfadministered', 'sent_0', 'questionnairebased']
+Evaluating word mail_1
+['email_0', 'admitted_2', 'messages_1', 'freely_0', 'commenced_2']
+Evaluating word distribution_0
+['distributions_0', 'distributions_1', 'patterning_0', 'variation', 'distributions_2']
+Evaluating word distribution_1
+['autonomous_0', 'peertopeer', 'channel_2', 'ip_2', 'interconnection']
+Evaluating word distribution_2
+['angstrom_0', 'kb_0', 'origin_0', 'entangled_3', 'energydispersive']
+Evaluating word depression_0
+['depressive', 'anxiety', 'symptom', 'pain_0', 'ptsd']
+Evaluating word depression_1
+['cones_1', 'mmyr', 'uplift_0', 'depressions', 'cretaceous_0']
+Evaluating word version_0
+['excel_0', 'revised_0', 'version_2', 'microsoft_0', 'matlab_0']
+Evaluating word version_2
+['suitably_4', 'version_0', 'versions_3', 'solver_0', 'formula_1']
+Evaluating word version_3
+['discourse_1', 'method_1', 'freedom_2', 'edition_0', 'items_2']
+Evaluating word version_1
+['sort_2', 'arabic_1', 'kind_2', 'football_0', 'vocabulary_1']
+Evaluating word plane_0
+['planes_0', 'front_2', 'axis_0', 'tip_0', 'junction_0']
+Evaluating word plane_2
+['angular', 'lifting_0', 'plane_0', 'motion_0', 'width_1']
+Evaluating word plane_1
+['graphitic', 'ndoped_0', 'decorated_0', 'mesopores', 'anchored_0']
+Evaluating word phone_0
+['phones', 'phone_1', 'apps_0', 'smartphones', 'mobile_1']
+Evaluating word phone_1
+['phones', 'phone_0', 'tablets_2', 'computers_0', 'smartphone_0']
+Evaluating word wave_0
+['waves', 'tidal', 'wec_0', 'wave_1', 'buoy_0']
+Evaluating word wave_1
+['harvester_3', 'wave_0', 'hydrokinetic', 'harvesters_2', 'converters_0']
+Evaluating word cycle
+['cycles', 'lifecycle_0', 'bringing_0', 'shelf_0', 'style_2']
+Evaluating word rise_0
+['rises_0', 'rising_0', 'rise_1', 'decline_0', 'decrease']
+Evaluating word rise_1
+['rise_0', 'rising_0', 'heightened', 'globalization', 'unprecedented_1']
+Evaluating word rising_0
+['increasing', 'escalating_0', 'escalating_1', 'everincreasing', 'rises_1']
+Evaluating word rising_1
+['rising_0', 'escalating_1', 'lowering_2', 'lowering_0', 'rise_0']
+Evaluating word level
+['levels_0', 'levels_1', 'degree_0', 'scale_0', 'scores_1']
+Evaluating word drop_0
+['drops_0', 'transmembrane_0', 'augmentation_2', 'decreases', 'rises_0']
+Evaluating word drop_1
+['drop_0', 'increase', 'increases_0', 'decrease', 'rises_0']
+Evaluating word rehabilitation
+['restoration_0', 'reconstruction_1', 'aftercare_0', 'revegetation', 'preventive_0']
+Evaluating word instrument_0
+['instruments_0', 'instrument_1', 'tool', 'framework_1', 'rubric_1']
+Evaluating word instrument_3
+['instruments_1', 'handheld', 'analyzer', 'gpr_0', 'camera']
+Evaluating word instrument_1
+['tool', 'instrument_0', 'device_1', 'instruments_0', 'criterion_1']
+Evaluating word instrument_2
+['module_1', 'examination_2', 'reminders', 'instructions_0', 'session_0']
+Evaluating word instrumentation_1
+['photogrammetry_1', 'sensors', 'radar_1', 'handheld', 'cameras_0']
+Evaluating word instrumentation_3
+['geotechnical_2', 'biotechnology_1', 'environ_0', 'httpdxdoiorg', 'polym_1']
+Evaluating word instrumentation_2
+['shoulder_1', 'nas_2', 'radiofrequency_0', 'obstruction_0', 'aortic']
+Evaluating word instrumentation_4
+['impose_2', 'prohibitive_1', 'imposes_2', 'escalating_0', 'prohibitive_3']
+Evaluating word instrumentation_0
+['retrofit_1', 'cleft_1', 'pic_1', 'detector_1', 'adopted_0']
+Evaluating word operation_0
+['operating_0', 'operational', 'microgrid_0', 'operations_0', 'charging']
+Evaluating word operation_1
+['hrt', 'startup_1', 'srt_0', 'stirred_0', 'anolyte']
+Evaluating word operation_2
+['additional_3', 'inception_0', 'ceased_0', 'lost_3', 'mids_0']
+Evaluating word operations_0
+['operation_0', 'activities_0', 'equipment', 'enterprise_0', 'remanufacturing_0']
+Evaluating word operations_1
+['distillation_0', 'microfiltration_0', 'semicontinuous', 'bioreactor', 'bioreactors']
+Evaluating word operations_2
+['artisanal_1', 'firms_1', 'date_2', 'wood_1', 'vessels_0']
+Evaluating word remote_0
+['remote_1', 'remote_2', 'offgrid', 'rural', 'sensing_1']
+Evaluating word remote_1
+['remote_0', 'remotely', 'sensed_0', 'satellite_0', 'groundbased_0']
+Evaluating word remote_2
+['sensing_1', 'remote_0', 'ubiquitous_1', 'photogrammetry_0', 'informatics']
+Evaluating word relation_0
+['relating_1', 'regard_1', 'related_1', 'relate_1', 'relates_1']
+Evaluating word relation_1
+['proportional', 'correlation_1', 'equals', 'maximizes_1', 'curves']
+Evaluating word relations_0
+['struggles_0', 'connections_0', 'relationships', 'interdependence_0', 'interplay_0']
+Evaluating word relations_2
+['links_3', 'interplay_1', 'expressions_0', 'geometrical_0', 'scaling_2']
+Evaluating word relations_1
+['alliances', 'ties_0', 'distrust_0', 'emergence_2', 'competition_3']
+Evaluating word relations_3
+['correlation_2', 'heterogeneity_1', 'regressions', 'correlations', 'kap_1']
+Evaluating word study
+['investigation', 'paper_0', 'work', 'analysis', 'studies']
+Evaluating word area_0
+['areas', 'region_0', 'zones_0', 'parcels_0', 'districts']
+Evaluating word area_1
+['field_1', 'topic', 'type_1', 'group_2', 'areas']
